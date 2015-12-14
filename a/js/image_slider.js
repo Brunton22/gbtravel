@@ -85,7 +85,7 @@ $(document).ready(function(){
 
 	$('.nav_arrows').on('click', '.image_nav_left', function(){
 
-		slide_left();
+		image_left();
 
 	})
 

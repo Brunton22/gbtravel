@@ -180,6 +180,24 @@ html, body { height: 100%; width: 100%; margin: 0; }
 
   }
 
+/*arrows*/
+
+  .nav_arrows_button {
+    width: 9%;
+    height: 8%;
+    cursor: pointer;
+  }
+
+  .right_arrow {
+    background-image: url("../imgs/arrow-right.png");
+    background-repeat: no-repeat;
+  }
+
+  .left_arrow {
+    background-image: url("../imgs/arrow-left.png");
+    background-repeat: no-repeat;
+  }
+
 /*image_slider*/
 
   .image_container {
@@ -197,26 +215,18 @@ html, body { height: 100%; width: 100%; margin: 0; }
 
   .image_nav_left {
     position: absolute;
-    top: 33%;
-    right: 92%;
+    top: 60%;
+    right: 10%;
     color: white;
     padding: 5px 10px 5px 10px;
-  }
-  .image_nav_left:hover {
-    background-color: black;
-    cursor: pointer;
   }
 
   .image_nav_right {
     position: absolute;
-    top: 33%;
+    top: 60%;
     right: 0%;
     color: white;
     padding: 5px 10px 5px 10px;
-  }
-  .image_nav_right:hover{
-    background-color: black;
-    cursor: pointer;
   }
 
   .o_image {
@@ -225,6 +235,45 @@ html, body { height: 100%; width: 100%; margin: 0; }
 
   .o_comment {
     display: none;
+  }
+
+/*maps*/
+
+  .maps {
+    position: absolute;
+    height: 70%;
+    width:70%;
+    left: 15%;
+    /*top:15%;*/
+    border: 2px solid black;
+  }
+  #map1 {
+    z-index: -1;
+    top: 15%;
+  }
+  #map2 {
+    z-index: -2;
+    top: 15%;
+  }
+
+  .map_nav_left {
+    position: absolute;
+    top: 47%;
+    right: 85%;
+  }
+
+  .map_nav_right {
+    position: absolute;
+    top: 47%;
+    right: 0%;
+  }
+
+  .routes_title {
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    text-decoration: underline;
+    font-size: 30px;
   }
 
 /* For smaller displays like laptops */
@@ -287,7 +336,7 @@ and (min-width : 980px){
   .image_nav_left {
     position: absolute;
     top: 45%;
-    right: 96%;
+    right: 82%;
     color: white;
     padding: 5px 10px 5px 10px;
   } 
@@ -295,7 +344,7 @@ and (min-width : 980px){
   .image_nav_right {
     position: absolute;
     top: 45%;
-    right: 1%;
+    right: 0%;
     color: white;
     padding: 5px 10px 5px 10px;
   }
@@ -378,7 +427,7 @@ and (min-width : 980px){
 
     .image_nav_left{
       top: 42%;
-      right: 95%;
+      right: 96%;
       color: grey;
       opacity: 0.4;
       background-color: black;
@@ -390,6 +439,22 @@ and (min-width : 980px){
 
     .back_3 {
       display: none;
+    }
+
+    .mp_buttons {
+      height: 40%;
+      left: 40%;
+      top: 40%;
+    }
+
+    .country_buttons {
+      height: 15%;
+      top: 10%;
+    }
+
+    .state_buttons {
+      height: 15%;
+      top: 10%;
     }
   }
 
@@ -418,24 +483,20 @@ and (min-width : 980px){
       font-size: 20px;
     }
 
-    .all_button_groups {
-      /* margin-left: 0%; */
+    .all_buttons {
+      width: 45%;
     }
 
     .back_buttons {
       margin-right: 85%;
     }
 
-    .state_buttons_group {
-      /* margin-left: 6%; */
+    .state_buttons {
+      left: 30%;
     }
 
-    .mp_buttons_group {
-      /* margin-left: 20%; */
-    }
-
-    .country_buttons_group {
-      /* margin-left: 20%; */
+    .country_buttons {
+      left: 30%;
     }
 
 }

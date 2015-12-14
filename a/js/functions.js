@@ -18,9 +18,18 @@ $( document ).ready(function() {
 		$('.all_button_groups').removeClass('hide');
 	}
 
+	window.hide_map = function() {
+		$('#map1').css('z-index', -1);
+		$('#map2').css('z-index', -2);
+		$('.map_arrows').addClass('hide');
+		$('#title_1').addClass('hide');
+		$('#title_2').addClass('hide');
+	}
+
 	window.show_main_buttons = function() {
 
 		hide_image();
+		hide_map();
 
 		$('.secondary_buttons').addClass('hide');
 		$('.back_buttons').addClass('hide');
@@ -67,12 +76,17 @@ $( document ).ready(function() {
 
 	window.show_map_section = function() {
 
-		//$('.map_section').removeClass('section_gone');
 		$('.map_section').removeClass('section_gone').addClass('section_big', 1000);
 		$('.picture_section').addClass('section_gone', 1000);
 		$('.about_section').addClass('section_gone', 1000);
 		$('.back_buttons').removeClass('hide', 1000);
 		$('.all_buttons').addClass('hide');
+		$('#map1').delay(600).queue(function(next){
+			$(this).css('z-index', 1);
+			next();
+		})
+		$('.map_arrows').removeClass('hide', 700);
+		$('#title_1').removeClass('hide', 700);
 	}
 
 	window.show_about_section = function() {

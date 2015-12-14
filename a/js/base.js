@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+	draw_map1();
+	draw_map2();
+
 	if (window.location.hash == '') {
 
 		window.location.hash = '#main';
@@ -60,7 +63,6 @@ $(document).ready(function() {
 
 			window.location.hash = '#usa';
 			show_state_buttons();
-			//alert($('.picture_button').data('clicked'));
 
 		})
 
@@ -83,8 +85,6 @@ $(document).ready(function() {
 			$('.country_buttons_group').addClass('hide');
 
 		})
-
-		//$('.state_buttons_group').on("click", ".Florida_button", function(){
 
 		$('.state_buttons_group').on('click', '.state_buttons', function(){
 
@@ -116,7 +116,6 @@ $(document).ready(function() {
 
 			window.location.hash = '#main';
 			show_main_buttons();
-
 		})
 
 		$('.back_buttons').on("click", ".back_2", function(){
@@ -138,6 +137,28 @@ $(document).ready(function() {
 			$('.nav_arrows').addClass('hide');
 
       		window.location.hash = '#usa';
+		})
+
+		//map arrows
+
+		$('.map_arrows').on('click', function(){
+
+			if ($('#title_1').hasClass('hide') ) {
+
+				$('#title_1').removeClass('hide');
+				$('#title_2').addClass('hide');
+				$('#map1').css('z-index', 1);
+				$('#map2').css('z-index', -1);
+			}
+
+			else {
+
+				$('#title_2').removeClass('hide');
+				$('#title_1').addClass('hide');
+				$('#map2').css('z-index', 1);
+				$('#map1').css('z-index', -1);
+
+			}
 		})
 
 	//browser_back
