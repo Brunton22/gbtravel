@@ -1,0 +1,624 @@
+html, body { height: 100%; width: 100%; margin: 0; }
+
+  .body_container {
+    height:inherit;
+    width: inherit;
+    background-color: black;
+  }
+
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+
+  .centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+  }
+
+	.hide {
+		display: none !important;
+	}
+
+  .picture_section {
+    height:33.3333%;
+    background-color: #59a1b5;
+  }
+
+  .map_section {
+    height:33.3333%;
+    background-color: #7d5d6d;
+  }
+
+  .about_section {
+    height: 33.3333%;
+    background-color: #b8e698;
+  }
+
+  .section_big {
+    display: block;
+    height: 100%;
+    overflow: auto;
+  }
+
+  .section_gone {
+    height: 0%;
+  }
+
+/* buttons */
+
+  .all_buttons {
+    position:relative;
+    vertical-align: middle;
+    color: #0b7;
+    display: inline-block;
+    height: 60px;
+    width: 50%;
+    top: 55%;
+    left: 55%;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.5s;
+    padding: 0 20px;
+    cursor: pointer;
+    border: 2px solid #0b7;
+    -webkit-transition:0.5s;
+<<<<<<< HEAD
+    font-family: Georgia, serif;
+=======
+>>>>>>> 28c7e15e0d6f34a705c0ea946e58dc56d5ddca35
+  }
+
+  .all_buttons:hover {
+    border: 2px solid #FFF;
+    color: #FFF;
+  }
+
+  .all_buttons::before, .all_buttons::after {
+    width: 100%;
+    height:100%;
+    z-index: 3;
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    box-sizing: border-box;
+    -webkit-transform: scale(0);
+    transition: 0.5s;
+  }
+
+  .mp_buttons_group {
+    height: 100%;
+  }
+
+  .picture_buttons {
+    background-color: #59a1b5;
+    color: #30626F;
+    border: 2px solid #30626F;
+  }
+
+  .map_button {
+    background-color: #7d5d6d;
+    color: #4E3744;
+    border: 2px solid #4E3744;
+  }
+
+  .about_button {
+    background-color: #b8e698;
+    color: #47583A;
+    border: 2px solid #47583A;
+  }
+
+  .country_buttons {
+    top: 20%;
+    left: 25%;
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .state_buttons {
+
+    display: block;
+    top: 10%;
+    left: 25%;
+    display: block;
+    margin-bottom: 50px;
+  }
+
+  .all_buttons {
+    /* display: block;
+    height: 100%;
+    background-color: #1ABC9C;
+    margin-left: 30px;
+    border-width: 0px 0px 0px 0px;
+    margin-bottom: 5%; */
+  }
+
+  .all_button_groups {
+    height: 100%;
+   /*  width: 100%;
+    padding-top: 5%;
+    height: 20%;
+    margin-left: 20%; */
+  }
+
+  /* .back_3 {
+    margin-top: 10%;
+    width: 75px;
+    margin-left: 95%;
+  } */
+
+  .back_buttons {
+    position: absolute;
+    float: right;
+    width: 10%;
+    margin-left: 80%;
+    margin-top: 1%;
+  }
+
+ /* .back_button {
+    position: absolute;
+    margin-top: 5%;
+  }
+
+/*picture page*/
+
+  .image_desc {
+    position: absolute;
+    top:90%;
+    background-color: grey;
+    color: white;
+    width: inherit;
+  }
+
+  .image_comment {
+    position: absolute;
+    width: 86%;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+
+  }
+
+/*arrows*/
+
+  .nav_arrows_button {
+<<<<<<< HEAD
+    height: 6%;
+    width: 9%;
+=======
+    width: 9%;
+    height: 8%;
+>>>>>>> 28c7e15e0d6f34a705c0ea946e58dc56d5ddca35
+    cursor: pointer;
+  }
+
+  .right_arrow {
+    background-image: url("../imgs/arrow-right.png");
+    background-repeat: no-repeat;
+  }
+
+  .left_arrow {
+    background-image: url("../imgs/arrow-left.png");
+    background-repeat: no-repeat;
+  }
+
+/*image_slider*/
+
+  .image_container {
+    width: 85%;
+    height: 40%;
+    margin-left: 7%;
+  }
+
+  .image {
+    height: 100%;
+    width: 100%;
+    margin-top: 35%;
+    border: 2px solid white;
+  }
+
+  .image_nav_left {
+    position: absolute;
+<<<<<<< HEAD
+    top: 63%;
+=======
+    top: 60%;
+>>>>>>> 28c7e15e0d6f34a705c0ea946e58dc56d5ddca35
+    right: 10%;
+    color: white;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .image_nav_right {
+    position: absolute;
+<<<<<<< HEAD
+    top: 63%;
+=======
+    top: 60%;
+>>>>>>> 28c7e15e0d6f34a705c0ea946e58dc56d5ddca35
+    right: 0%;
+    color: white;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .o_image {
+    display: none;
+  }
+
+  .o_comment {
+    display: none;
+  }
+
+/*maps*/
+
+  .maps {
+    position: absolute;
+    height: 70%;
+    width:70%;
+    left: 15%;
+    /*top:15%;*/
+    border: 2px solid black;
+  }
+  #map1 {
+    z-index: -1;
+    top: 15%;
+  }
+  #map2 {
+    z-index: -2;
+    top: 15%;
+  }
+
+  .map_nav_left {
+    position: absolute;
+    top: 47%;
+<<<<<<< HEAD
+    right: 89%;
+=======
+    right: 85%;
+>>>>>>> 28c7e15e0d6f34a705c0ea946e58dc56d5ddca35
+  }
+
+  .map_nav_right {
+    position: absolute;
+    top: 47%;
+<<<<<<< HEAD
+    right: 2%;
+=======
+    right: 0%;
+>>>>>>> 28c7e15e0d6f34a705c0ea946e58dc56d5ddca35
+  }
+
+  .routes_title {
+    position: absolute;
+    top: 5%;
+<<<<<<< HEAD
+    left: 38%;
+    font-size: 30px;
+    font-family: Georgia, serif;
+=======
+    left: 35%;
+    text-decoration: underline;
+    font-size: 30px;
+>>>>>>> 28c7e15e0d6f34a705c0ea946e58dc56d5ddca35
+  }
+
+/* For smaller displays like laptops */
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .container {
+    width: 724px;
+  }
+
+  .image {
+    margin-top: 8%
+  }
+
+  .image_nav_left{
+    top: 43%;
+  }
+
+  .image_nav_right{
+    top: 43%;
+  }
+
+  .image_container {
+    width: 75%;
+    height: 70%;
+    margin-left: 12%;
+  }
+
+  .image_comment {
+    position: absolute;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    bottom: auto;
+    width: 75%;
+    height: 5%;
+    font-size: 20px;
+  }
+}
+
+/*PC*/
+
+@media only screen
+and (min-width : 980px){
+
+<<<<<<< HEAD
+=======
+  .state_buttons {
+   /*  height: 100%;
+    margin-top: 10%;
+    width: 20%;
+    margin-left: 30px; */
+  }
+
+>>>>>>> 28c7e15e0d6f34a705c0ea946e58dc56d5ddca35
+  .back_button {
+    position: absolute;
+  }
+
+  .back_buttons {
+    margin-right: 1%;
+  }
+
+  .image_nav_left {
+    position: absolute;
+    top: 45%;
+    right: 82%;
+    color: white;
+    padding: 5px 10px 5px 10px;
+  } 
+
+  .image_nav_right {
+    position: absolute;
+    top: 45%;
+    right: 0%;
+    color: white;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .image_container {
+    width: 75%;
+    height: 80%;
+    margin-left: 12%;
+  }
+
+  .image {
+    margin-top: 8%;
+  }
+
+  .image_comment {
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    bottom: auto;
+    width: 75%;
+    height: 5%;
+    font-size: 20px;
+  }
+
+  .all_buttons {
+
+    left: 40%;
+    width: 30%;
+    height: 100px;
+  }
+
+  .country_buttons {
+    left: 33%;
+    width: 30%;
+    height: 100px;
+    top: 10%;
+  }
+
+  .state_buttons {
+    left: 33%;
+    top: 10%;
+  }
+
+<<<<<<< HEAD
+  .maps {
+    border: 4px solid black;
+  }
+
+  .routes_title {
+    left: 48%;
+  }
+
+=======
+>>>>>>> 28c7e15e0d6f34a705c0ea946e58dc56d5ddca35
+}
+
+
+
+/*ipad*/
+
+@media only screen
+  and (min-device-width: 768px) 
+  and (max-device-width: 1280px) {
+
+    .container {
+        width: auto;
+    }
+
+    .image_container {
+      width: 100%;
+      height: 45%;
+      margin-left: 0%
+     }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      margin-top: 25%;
+    }
+
+    .image_comment {
+      width: 100%;
+    }
+
+    .image_nav_right{
+      top: 42%;
+      color: grey;
+      opacity: 0.4;
+      background-color: black;
+    }
+
+    .image_nav_left{
+      top: 42%;
+      right: 96%;
+      color: grey;
+      opacity: 0.4;
+      background-color: black;
+    }
+
+    .back_button {
+      margin-left: 80%;
+    }
+
+    .back_3 {
+      display: none;
+    }
+
+    .mp_buttons {
+      height: 40%;
+      left: 40%;
+      top: 40%;
+    }
+
+    .country_buttons {
+      height: 15%;
+      top: 10%;
+    }
+
+    .state_buttons {
+      height: 15%;
+      top: 10%;
+    }
+  }
+
+  /*ipad landscape*/
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) {
+
+    .image_container {
+      height: 100%;
+    }
+
+    .image {
+      margin-top: auto;
+    }
+
+    .image_back_button {
+      display: none;
+    }
+
+    .image_comment {
+      height: 5%;
+      bottom: 0%;
+      font-size: 20px;
+    }
+
+    .all_buttons {
+      width: 45%;
+    }
+
+    .back_buttons {
+      margin-right: 85%;
+    }
+
+    .state_buttons {
+      left: 30%;
+    }
+
+    .country_buttons {
+      left: 30%;
+    }
+
+}
+
+/*phone landscape*/
+
+@media only screen
+and (max-device-width : 750px) and (orientation: landscape){
+
+  .image_container {
+    height:100%;
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .image {
+    margin-top: 0%;
+    border: none;
+  }
+
+  .image_back_button {
+    display: none;
+  }
+
+<<<<<<< HEAD
+  .image_nav_left {
+    right: 89%;
+    opacity: 0.5;
+  }
+
+  .image_nav_right {
+    right: 0% ;
+    opacity: 0.5;
+  }
+
+=======
+>>>>>>> 28c7e15e0d6f34a705c0ea946e58dc56d5ddca35
+  .mp_buttons {
+    left: 40%;
+  }
+
+  .country_buttons {
+    top: 10%;
+  }
+
+  .image_comment {
+    bottom: 0%;
+    width: 100%;
+    display: none;
+  }
+
+<<<<<<< HEAD
+  .routes_title {
+    top: 3%;
+    left: 47%;
+  }
+
+  .nav_arrows {
+    position: absolute;
+    height: 9%;
+    width: 5%;
+    top: 45%;
+  }
+
+  .nav_arrows_button {
+    height: 9%;
+    width: 5%;
+  }
+
+  .map_nav_left {
+    right: 90%;
+  }
+
+  .map_nav_right {
+    right: 4%;
+  }
+
+=======
+>>>>>>> 28c7e15e0d6f34a705c0ea946e58dc56d5ddca35
+}
