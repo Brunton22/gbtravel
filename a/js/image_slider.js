@@ -1,12 +1,9 @@
-$(document).ready(function(){ alert('hi');
+$(document).ready(function(){
 
 	window.image_loop_up = function(val) {
 
 		image_no = val;
-		//while ( (($('#'+image_no).length) == 0) && ($('#'+image_no).hasClass('o_image')) ) {
 
-			//image_no++;
-			//alert(image_no);
 		}
 
 	window.image_loop_up_click = function() {
@@ -68,6 +65,8 @@ $(document).ready(function(){ alert('hi');
 
 	}
 
+	//image_slide
+
 	$('.image_container').on('swiperight', function() {
 
 		image_right();
@@ -89,8 +88,8 @@ $(document).ready(function(){ alert('hi');
 	});
 
 	$('.image_container').on('swipeleft', function() {
-		
-		image_left();
+
+			image_left();
 	})
 
 	$('.image_nav_left').on('click', function(){

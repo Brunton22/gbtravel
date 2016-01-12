@@ -24,7 +24,7 @@
 	    // output data of each row
 	    	while ($row = mysqli_fetch_row($result)) {
 	    		$row[1] = str_replace(' ', '', $row[1]);
-	        	echo "<button class='all_buttons picture_buttons country_buttons $row[1]_button'>";
+	        	echo "<button class='all_buttons picture_buttons country_buttons $row[1]_button' data-role='none'>";
 	        	$row[1] = str_replace('NewZealand', 'New Zealand', $row[1]);
 	        	echo "$row[1]</button>";
 	    }
@@ -42,7 +42,7 @@
 	  	if ($result = mysqli_query($conn, $sql)) {
 	    // output data of each row
 	    	while ($row = mysqli_fetch_row($result)) {
-	        	echo "<button class='all_buttons picture_buttons state_buttons $row[1]_button' id='$row[1]'>$row[1]</button>";
+	        	echo "<button class='all_buttons picture_buttons state_buttons $row[1]_button' id='$row[1]' data-role='none'>$row[1]</button>";
 	    }
 	  }
 

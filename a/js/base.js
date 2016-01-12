@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-	//draw_map1();
-	//draw_map2();
+	draw_map1();
+	draw_map2();
 
 	image_slider_loaded = '0';
 	image_no = '1';
@@ -96,17 +96,20 @@ $(document).ready(function() {
 				$.getScript('a/js/image_slider.js');
 
 				image_slider_loaded = '1';
+
 			}
 
 			else {
 
 			};
 
+			$('.image_loading').show();
+
 			state = $(this).attr('id');
 
 			window.location.hash = '#'+state;
 
-		$.ajax ({
+			$.ajax ({
 				type: "POST",
 				url: "a/php/images.php?action=get_state_id",
 				data: {state_name: state},
@@ -118,13 +121,16 @@ $(document).ready(function() {
 
 					var first_image = $('.image').first().attr('id');
 
-					alert(first_image);
-
 					image_loop_up(first_image);
+
+					$('.o_image').on('load', function(){
+						$('.image_loading').hide();
+					})
+
 
 				}
 			})
-
+			
 			show_image();
 	 
 		})
@@ -160,7 +166,7 @@ $(document).ready(function() {
 
 		//map arrows
 
-		$('.map_arrows').on('click', function(){
+		function map_slide(){
 
 			if ($('#title_1').hasClass('hide') ) {
 
@@ -177,6 +183,24 @@ $(document).ready(function() {
 				$('#map2').css('z-index', 1);
 				$('#map1').css('z-index', -1);
 
+			}
+		}
+
+		$('.map_arrows').on('click', function(){
+
+			map_slide();
+
+		})
+
+		$(document).keydown(function (e) {
+
+			if ( window.location.hash == '#map' ) {
+
+				if ( (e.keyCode == 39) || (e.keyCode == 37) ){
+
+				map_slide();
+
+				}
 			}
 		})
 

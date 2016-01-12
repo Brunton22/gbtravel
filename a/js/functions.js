@@ -3,7 +3,7 @@ $( document ).ready(function() {
 	window.show_image = function(){
 
 		$('.all_button_groups').addClass('hide');
-		$('.images').removeClass('hide');
+		//$('.images').removeClass('hide');
 		$('.image_container').removeClass('hide');
 		$('.nav_arrows').removeClass('hide');
 		$('.back_button').addClass('image_back_button');
@@ -36,6 +36,7 @@ $( document ).ready(function() {
 		$('.mp_buttons').removeClass('hide', 1000);
 		$('.section_big').removeClass('section_big', 1000);
 		$('.section_gone').removeClass('section_gone', 1000);
+		$('.about_info').addClass('hide');
 		//window.location.hash = '#main';
 	}
 
@@ -49,6 +50,7 @@ $( document ).ready(function() {
 		$('.map_section').addClass('section_gone', 1000);
 		$('.about_section').addClass('section_gone', 1000);
 		$('.back_buttons').removeClass('hide', 1000);
+		$('.about_info').addClass('hide');
 
 		if ( $('.picture_section').hasClass('section_big') ) {
 
@@ -73,6 +75,7 @@ $( document ).ready(function() {
 		$('.map_section').addClass('section_gone', 1000);
 		$('.about_section').addClass('section_gone', 1000);
 		$('.back_button').removeClass('back_2').addClass('back_3');
+		$('.about_info').addClass('hide');
 
 	}
 
@@ -89,6 +92,7 @@ $( document ).ready(function() {
 		})
 		$('.map_arrows').removeClass('hide', 700);
 		$('#title_1').removeClass('hide', 700);
+		$('.about_info').addClass('hide');
 	}
 
 	window.show_about_section = function() {
@@ -99,5 +103,6 @@ $( document ).ready(function() {
 		$('.map_section').addClass('section_gone', 1000);
 		$('.picture_section').addClass('section_gone', 1000);
 		$('.back_buttons').removeClass('hide', 1000);
+		$('.about_info').removeClass('hide', 1000);
 	}
 })
