@@ -68,15 +68,15 @@
 		</div>
 
 		<div class="about_info hide">
-			In September 2015 my partner (Emily Hall) and I (Graeme Brunton) left our jobs and our homes to travel.</br>
+			In September 2015 my partner, Emily and I (Graeme) left our jobs and our homes to travel.</br>
 			Our first stop was the United States where we went on a 3 month road trip in an RV. We drove - and camped - through
-			the south eastern states for 6 weeks and then went to the west coast to do the same for another 6 weeks.</br>
-			We travelled many beautiful places and this site was created to show all these amazing locations.</br></br>
+			the southern states for 6 weeks and then went to the west coast to do the same for another 6 weeks.</br>
+			We travelled to many beautiful places and I created this site in order to show the photos we've taken along the way.</br></br>
 
-			You can find the pictures in the Picture section of this site. The site also has a route section where you can view both
-			routes we travelled, in order from A to Z.</br></br>
+			You can find the photos in the 'Photo' section of this site. The site also has a 'USA Route' section where you can view both
+			routes we travelled in the USA (from A to Z).</br></br>
 
-			Emily also has also been writing a blog that you can view at<a href="https://homebirdflies.wordpress.com/" target="_blank"> homebirdflies.wordpress.com</a>. For a taster of 
+			Emily has also been writing a blog that you can view at<a href="https://homebirdflies.wordpress.com/" target="_blank"> homebirdflies.wordpress.com</a>. For a taster of 
 			the blog you can view her latest post by clicking <a href="">here</a>.
 
 		</div>

@@ -155,6 +155,7 @@ html, body { height: 100%; width: 100%; margin: 0;}
     opacity: 0.7;
     color: white;
     font-family: 'Raleway', sans-serif;
+    text-shadow: none;
   }
 
 /*arrows*/
@@ -268,6 +269,7 @@ html, body { height: 100%; width: 100%; margin: 0;}
     top: 30px;
     padding-left: 10px;
     padding-right: 10px;
+    font-family: 'Raleway', sans-serif;
   }
 
 /* For smaller displays like laptops */
@@ -322,7 +324,7 @@ and (min-width : 980px){
 
   .image_nav_left {
     position: absolute;
-    top: 45%;
+    top: 50%;
     right: 82%;
     color: white;
     padding: 5px 10px 5px 10px;
@@ -330,7 +332,7 @@ and (min-width : 980px){
 
   .image_nav_right {
     position: absolute;
-    top: 45%;
+    top: 50%;
     right: 0%;
     color: white;
     padding: 5px 10px 5px 10px;
@@ -416,18 +418,15 @@ and (min-width : 980px){
     }
 
     .image_nav_right{
-      top: 42%;
-      color: grey;
-      opacity: 0.4;
-      background-color: black;
+      top: 40%;
+      right: -6%;
+      opacity: 0.8;
     }
 
     .image_nav_left{
-      top: 42%;
-      right: 96%;
-      color: grey;
-      opacity: 0.4;
-      background-color: black;
+      top: 40%;
+      right: 86%;
+      opacity: 0.8;
     }
 
     .back_button {
@@ -442,16 +441,27 @@ and (min-width : 980px){
       height: 40%;
       left: 40%;
       top: 40%;
+      font-size: 25px;
     }
 
     .country_buttons {
       height: 15%;
       top: 10%;
+      font-size: 25px;
     }
 
     .state_buttons {
       height: 15%;
       top: 10%;
+      font-size: 25px;
+    }
+
+    .routes_title {
+      left: 45%;
+    }
+
+    .map_nav_left {
+      right: 84%;
     }
   }
 
@@ -488,12 +498,23 @@ and (min-width : 980px){
       margin-right: 85%;
     }
 
+    .mp_buttons {
+      top: 50%;
+      font-size: 20px;
+    }
+
     .state_buttons {
       left: 30%;
+      font-size: 20px;
     }
 
     .country_buttons {
       left: 30%;
+      font-size: 20px;
+    }
+
+    .nav_arrows {
+      top: 43%;
     }
 
 }

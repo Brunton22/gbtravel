@@ -29,18 +29,6 @@
 			}
 		}
 
-		//$sql="SELECT * FROM images WHERE state_ID=$state_no AND image_ID<>'1'";
-    	//$result=mysqli_query($conn, $sql);
-
-    	//if ($result=mysqli_query($conn, $sql)) {
-
-    		//while ($row=mysqli_fetch_row($result)) { 
-    			//echo 	"<img class='image_$row[0] image o_image' id='$row[0]' src='a/imgs/site_images/$row[0].jpg'>
-						//<div class='image_comment_$row[0] image_comment o_image'>$row[3]</div>";
-    		//} 
-
-    	//};
-
     };
 
     function state_id() {
