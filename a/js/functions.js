@@ -7,6 +7,7 @@ $( document ).ready(function() {
 		$('.image_container').removeClass('hide');
 		$('.nav_arrows').removeClass('hide');
 		$('.back_button').addClass('image_back_button');
+		$('.landscape_back_button').removeClass('hide');
 	}
 
 	window.hide_image = function(){
@@ -16,6 +17,7 @@ $( document ).ready(function() {
 		$('.nav_arrows').addClass('hide');
 		$('.back_button').removeClass('image_back_button');
 		$('.all_button_groups').removeClass('hide');
+		$('.landscape_back_button').addClass('hide');
 	}
 
 	window.hide_map = function() {

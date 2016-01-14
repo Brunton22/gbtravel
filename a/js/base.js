@@ -164,6 +164,19 @@ $(document).ready(function() {
       		window.location.hash = '#usa';
 		})
 
+		$('.landscape_back_button').on('click', function(){
+
+			$('.all_button_groups').removeClass('hide');
+			$('.state_buttons_group').removeClass('hide');
+			$('.back_button').removeClass('back_3').addClass('back_2');
+			$('.back_button').removeClass('image_back_button');
+			$('.image_container').addClass('hide');
+			$('.nav_arrows').addClass('hide');
+			$('.landscape_back_button').addClass('hide');
+
+      		window.location.hash = '#usa';
+		})
+
 		//map arrows
 
 		function map_slide(){

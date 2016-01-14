@@ -134,8 +134,26 @@ html, body { height: 100%; width: 100%; margin: 0;}
     position: absolute;
     float: right;
     width: 10%;
-    margin-left: 80%;
-    margin-top: 1%;
+    margin-left: 85%;
+    margin-top: 3%;
+  }
+  .back_buttons:hover{
+    color: white;
+    cursor: pointer;
+  }
+
+  .fa {
+    text-shadow: none;
+  }
+
+  .landscape_back_button {
+    display: none;
+    position: absolute;
+    right: 17%;
+    color: #585252;
+  }
+  .landscape_back_button:hover{
+    cursor: pointer;
   }
 
 /*picture page*/
@@ -166,7 +184,7 @@ html, body { height: 100%; width: 100%; margin: 0;}
     cursor: pointer;
   }
 
-  .right_arrow {
+  /* .right_arrow {
     background-image: url("../imgs/arrow-right.png");
     background-repeat: no-repeat;
   }
@@ -174,7 +192,7 @@ html, body { height: 100%; width: 100%; margin: 0;}
   .left_arrow {
     background-image: url("../imgs/arrow-left.png");
     background-repeat: no-repeat;
-  }
+  } */
 
 /*image_slider*/
 
@@ -194,17 +212,21 @@ html, body { height: 100%; width: 100%; margin: 0;}
   .image_nav_left {
     position: absolute;
     top: 63%;
-    right: 10%;
-    color: white;
+    right: 12%;
     padding: 5px 10px 5px 10px;
+  }
+  .fa-chevron-circle-left:hover{
+    color: white;
   }
 
   .image_nav_right {
     position: absolute;
     top: 63%;
     right: 0%;
-    color: white;
     padding: 5px 10px 5px 10px;
+  }
+  .fa-chevron-circle-right:hover{
+    color: white;
   }
 
   .o_image {
@@ -249,7 +271,7 @@ html, body { height: 100%; width: 100%; margin: 0;}
   .map_nav_right {
     position: absolute;
     top: 47%;
-    right: 2%;
+    right: 3%;
   }
 
   .routes_title {
@@ -270,6 +292,7 @@ html, body { height: 100%; width: 100%; margin: 0;}
     padding-left: 10px;
     padding-right: 10px;
     font-family: 'Raleway', sans-serif;
+    right: 59px;
   }
 
 /* For smaller displays like laptops */
@@ -316,17 +339,27 @@ and (min-width : 980px){
 
   .back_button {
     position: absolute;
+    right: 0%;
+    top: -25px;
   }
 
   .back_buttons {
     margin-right: 1%;
   }
 
+  .back_3 {
+    right: 0%;
+    top: -25px;
+  }
+
+  .about_info {
+    right: 150px;
+  }
+
   .image_nav_left {
     position: absolute;
     top: 50%;
     right: 82%;
-    color: white;
     padding: 5px 10px 5px 10px;
   } 
 
@@ -334,7 +367,6 @@ and (min-width : 980px){
     position: absolute;
     top: 50%;
     right: 0%;
-    color: white;
     padding: 5px 10px 5px 10px;
   }
 
@@ -395,7 +427,8 @@ and (min-width : 980px){
 
 @media only screen
   and (min-device-width: 768px) 
-  and (max-device-width: 1280px) {
+  and (max-device-width: 1280px)
+  and (orientation : portrait) {
 
     .container {
         width: auto;
@@ -419,13 +452,13 @@ and (min-width : 980px){
 
     .image_nav_right{
       top: 40%;
-      right: -6%;
+      right: -4.5%;
       opacity: 0.8;
     }
 
     .image_nav_left{
       top: 40%;
-      right: 86%;
+      right: 89%;
       opacity: 0.8;
     }
 
@@ -433,13 +466,9 @@ and (min-width : 980px){
       margin-left: 80%;
     }
 
-    .back_3 {
-      display: none;
-    }
-
     .mp_buttons {
       height: 40%;
-      left: 40%;
+      left: 38%;
       top: 40%;
       font-size: 25px;
     }
@@ -463,6 +492,14 @@ and (min-width : 980px){
     .map_nav_left {
       right: 84%;
     }
+
+    .landscape_back_button {
+      display: none;
+    }
+
+    .about_info {
+      right: 57px;
+    }
   }
 
   /*ipad landscape*/
@@ -474,6 +511,8 @@ and (min-width : 980px){
 
     .image_container {
       height: 100%;
+      margin-left: 0px;
+      width:100%;
     }
 
     .image {
@@ -488,6 +527,9 @@ and (min-width : 980px){
       height: 5%;
       bottom: 0%;
       font-size: 20px;
+      width: 100%;
+      text-indent: 10px;
+      padding-top: 5px;
     }
 
     .all_buttons {
@@ -496,6 +538,10 @@ and (min-width : 980px){
 
     .back_buttons {
       margin-right: 85%;
+    }
+
+    .back_button {
+      right: 0%;
     }
 
     .mp_buttons {
@@ -515,6 +561,26 @@ and (min-width : 980px){
 
     .nav_arrows {
       top: 43%;
+    }
+
+    .image_nav_right {
+      right: -5%;
+    }
+
+    .image_nav_left{
+      right: 89%;
+    }
+
+    .landscape_back_button {
+      display: block;
+      position: absolute;
+      right: -49%;
+      color: #585252;
+      bottom: 0%;
+    }
+
+    .about_info {
+      right: 97px;
     }
 
 }
@@ -539,8 +605,13 @@ and (max-device-width : 750px) and (orientation: landscape){
     display: none;
   }
 
+  .back_buttons {
+    margin-left: 91%;
+    margin-top: 1%;
+  }
+
   .image_nav_left {
-    right: 89%;
+    right: 93%;
     opacity: 0.5;
   }
 
@@ -572,7 +643,7 @@ and (max-device-width : 750px) and (orientation: landscape){
     position: absolute;
     height: 9%;
     width: 5%;
-    top: 45%;
+    top: 40%;
   }
 
   .nav_arrows_button {
@@ -581,11 +652,23 @@ and (max-device-width : 750px) and (orientation: landscape){
   }
 
   .map_nav_left {
-    right: 90%;
+    right: 88%;
   }
 
   .map_nav_right {
-    right: 4%;
+    right: 7%;
+  }
+
+  .landscape_back_button {
+    display: block;
+    position: absolute;
+    right: 10%;
+    color: #585252;
+    top: -10px;
+  }
+
+  .about_info {
+    right: 64px;
   }
 
 }

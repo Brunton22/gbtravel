@@ -29,7 +29,8 @@
 <body data-role='none'>
 	<div class="body_container" data-role='none'>
 		<div class="back_buttons hide">
-			<!--<button class="back_button back_1" data-role='none'>Back</button>--><i class="back_button back_1 fa fa-times"></i><br>
+			<i class="back_button back_1 fa fa-arrow-circle-left fa-3x"></i>
+			<i class="landscape_back_button fa fa-times fa-2x hide"></i>
 		</div>
 
 		<div class="button_group all_button_groups">
@@ -62,8 +63,8 @@
 			<div class="maps" id="map1"></div>
 			<div class="maps" id="map2"></div>
 			<div class="map_arrows hide">
-				<div class="map_nav_left left_arrow nav_arrows_button"></div>
-				<div class="map_nav_right right_arrow nav_arrows_button"></div>
+				<div class="map_nav_left fa fa-chevron-circle-left fa-3x left_arrow nav_arrows_button"></div>
+				<div class="map_nav_right fa fa-chevron-circle-right fa-3x right_arrow nav_arrows_button"></div>
 			</div>
 		</div>
 
@@ -81,8 +82,8 @@
 
 		</div>
 
-		<div class="nav_arrows image_nav_left left_arrow nav_arrows_button hide"></div>
-		<div class="nav_arrows image_nav_right right_arrow nav_arrows_button hide"></div>
+		<div class="nav_arrows image_nav_left fa fa-chevron-circle-left fa-3x left_arrow nav_arrows_button hide"></div>
+		<div class="nav_arrows image_nav_right fa fa-chevron-circle-right fa-3x right_arrow nav_arrows_button hide"></div>
 
 	</div>
 </body>
