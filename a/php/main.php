@@ -24,7 +24,7 @@
 	    // output data of each row
 	    	while ($row = mysqli_fetch_row($result)) {
 	    		$row[1] = str_replace(' ', '', $row[1]);
-	        	echo "<button class='all_buttons picture_buttons country_buttons $row[1]_button' data-role='none'>";
+	        	echo "<button class='all_buttons picture_buttons country_buttons $row[1]_button' id='$row[0]' data-role='none'>";
 	        	$row[1] = str_replace('NewZealand', 'New Zealand', $row[1]);
 	        	echo "$row[1]</button>";
 	    }

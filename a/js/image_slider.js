@@ -21,7 +21,7 @@ $(document).ready(function(){
 		var last = parseInt( $('.image').last().attr('id') );
 		var first = parseInt( $('.image').first().attr('id') );
 
-		$('#'+image_no).hide('slide', {direction: 'right'} );
+		$('.image_'+image_no).hide('slide', {direction: 'right'} );
 		$('.image_comment_'+image_no).hide('slide', {direction: 'right'} );
 
 		if (image_no < last) {
@@ -35,8 +35,12 @@ $(document).ready(function(){
 
 		}
 
-		$('#'+image_no).delay(400).show('slide');
-		$('.image_comment_'+image_no).delay(400).show('slide');
+		$('.image_'+image_no).delay(400).show('slide', {direction: 'left'} );
+
+		if ($('.comment_toggle_up').css('display') == 'none'){
+
+			$('.image_comment_'+image_no).delay(400).show('slide', {direction: 'left'} );
+		}
 	}
 
 	function image_left() {
@@ -44,7 +48,7 @@ $(document).ready(function(){
 		var last = parseInt( $('.image').last().attr('id') );
 		var first = parseInt( $('.image').first().attr('id') );
 
-		$('#'+image_no).hide('slide', {direction: 'left'} );
+		$('.image_'+image_no).hide('slide', {direction: 'left'} );
 		$('.image_comment_'+image_no).hide('slide', {direction: 'left'} );
 
 		if (image_no == first){
@@ -61,7 +65,12 @@ $(document).ready(function(){
 		while (($('#'+image_no).length) == 0);
 
 		$('.image_'+image_no).delay(400).show('slide', {direction: 'right'} );
-		$('.image_comment_'+image_no).delay(400).show('slide', {direction: 'right'} );
+
+	
+		if ($('.comment_toggle_up').css('display') == 'none'){		
+
+			$('.image_comment_'+image_no).delay(400).show('slide', {direction: 'right'} );
+		}
 
 	}
 
@@ -103,6 +112,26 @@ $(document).ready(function(){
 
 			image_left();
 		}
+	})
+
+	//comment toggle
+
+	$('.comment_toggle_up').on('click', function(){
+
+		$('.comment_toggle_up').hide();
+		$('.comment_toggle_down').show();
+		$('.image_comment_'+image_no).slideToggle('slow', function(){
+
+		});
+	})
+
+	$('.comment_toggle_down').on('click', function(){
+
+		$('.comment_toggle_up').show();
+		$('.comment_toggle_down').hide();
+		$('.image_comment_'+image_no).slideToggle('slow', function(){
+
+		});
 	})
 
 })

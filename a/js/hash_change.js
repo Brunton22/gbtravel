@@ -1,3 +1,4 @@
+
 $( document ).ready(function() {
 
   window.hash_change = function() {
@@ -5,7 +6,7 @@ $( document ).ready(function() {
     //if element hasn't been clicked
 
 
-    if ( (window.location.hash == '#pictures') && ($('.picture_button').data('clicked') == false) ) {
+    if ( (window.location.hash == '#images') && ($('.picture_button').data('clicked') == false) ) {
 
       show_country_buttons();	
       $('.back_button').removeClass('back_2').removeClass('back_3').addClass('back_1');
@@ -36,6 +37,20 @@ $( document ).ready(function() {
 
       show_main_buttons();
       $('.back_button').removeClass('back_2').removeClass('back_3').addClass('back_1');
+    }
+
+    else if (window.location.hash == '#fiji') {
+
+      show_image();
+      $('.back_button').removeClass('back_2').removeClass('back_1').addClass('back_3');
+
+    }
+
+    else if (window.location.hash == '#newzealand') {
+
+      show_image();
+      $('.back_button').removeClass('back_2').removeClass('back_1').addClass('back_3');
+
     }
 
     else if (window.location.hash == '#Florida') {

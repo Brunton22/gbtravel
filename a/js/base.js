@@ -39,7 +39,7 @@ $(document).ready(function() {
 			$('.all_buttons').data('clicked', false);
 			$(this).data('clicked', true);
 
-			window.location.hash = '#pictures';
+			window.location.hash = '#images';
 			show_country_buttons();
 
 			//web_nav();
@@ -71,13 +71,99 @@ $(document).ready(function() {
 
 		$('.country_buttons_group').on("click", ".Fiji_button", function(){
 
+			if (image_slider_loaded == '0') {
+
+				$.getScript('a/js/image_slider.js');
+
+				image_slider_loaded = '1';
+
+			}
+
+			else {
+
+			};
+
+
+			country = ( $(this).attr('id') );
+
 			$('.country_buttons_group').addClass('hide');
+
+			window.location.hash = '#fiji';
+
+			$('.comment_toggle_up').removeClass('hide');
+
+			$.ajax ({
+				type: "POST",
+				url: "a/php/images.php?action=get_country_images",
+				data: {country_id: country},
+				success: function(data){
+
+					$('.image_container').html(data);
+					$('.image').first().removeClass('o_image');
+					$('.image_comment').first().removeClass('o_comment');
+
+					var first_image = $('.image').first().attr('id');
+
+					setTimeout(image_loop_up(first_image), 2000);
+
+					$('.o_image').on('load', function(){
+						$('.image_loading').hide();
+					})
+
+
+				}
+			})
+
+			show_image()
 
 		})
 
 		$('.country_buttons_group').on("click", ".NewZealand_button", function(){
 
+			if (image_slider_loaded == '0') {
+
+				$.getScript('a/js/image_slider.js');
+
+				image_slider_loaded = '1';
+
+			}
+
+			else {
+
+			};
+
+
+			country = ( $(this).attr('id') );
+
 			$('.country_buttons_group').addClass('hide');
+
+			window.location.hash = '#newzealand';
+
+			$('.comment_toggle_up').removeClass('hide');
+
+			$.ajax ({
+				type: "POST",
+				url: "a/php/images.php?action=get_country_images",
+				data: {country_id: country},
+				success: function(data){
+
+					$('.image_container').html(data);
+					$('.image').first().removeClass('o_image');
+					$('.image_comment').first().removeClass('o_comment');
+
+					var first_image = $('.image').first().attr('id');
+
+					setTimeout(image_loop_up(first_image), 2000);
+
+					$('.o_image').on('load', function(){
+						$('.image_loading').hide();
+					})
+
+
+				}
+			})
+
+			show_image()
 
 		})
 
@@ -103,7 +189,7 @@ $(document).ready(function() {
 
 			};
 
-			$('.image_loading').show();
+			$('.comment_toggle_up').removeClass('hide');
 
 			state = $(this).attr('id');
 
@@ -121,7 +207,7 @@ $(document).ready(function() {
 
 					var first_image = $('.image').first().attr('id');
 
-					image_loop_up(first_image);
+					setTimeout(image_loop_up(first_image), 1000);
 
 					$('.o_image').on('load', function(){
 						$('.image_loading').hide();
@@ -145,7 +231,7 @@ $(document).ready(function() {
 
 		$('.back_buttons').on("click", ".back_2", function(){
 
-			window.location.hash = '#pictures'
+			window.location.hash = '#images'
 
 			$('.state_buttons_group').addClass('hide');
 			$('.country_buttons_group').removeClass('hide');
@@ -154,27 +240,94 @@ $(document).ready(function() {
 
 		$('.back_buttons').on("click", ".image_back_button", function(){
 
-			$('.all_button_groups').removeClass('hide');
-			$('.state_buttons_group').removeClass('hide');
-			$('.back_button').removeClass('back_3').addClass('back_2');
-			$('.back_button').removeClass('image_back_button');
-			$('.image_container').addClass('hide');
-			$('.nav_arrows').addClass('hide');
+			if (window.location.hash == '#fiji') {
+
+				$('.all_button_groups').removeClass('hide');
+				$('.country_buttons_group').removeClass('hide');
+				$('.back_button').removeClass('back_3').addClass('back_2');
+				$('.back_button').removeClass('image_back_button');
+				$('.image_container').addClass('hide');
+				$('.nav_arrows').addClass('hide');
+
+				window.location.hash = '#images'
+
+			}
+
+			else if (window.location.hash == '#newzealand') {
+
+				$('.all_button_groups').removeClass('hide');
+				$('.country_buttons_group').removeClass('hide');
+				$('.back_button').removeClass('back_3').addClass('back_2');
+				$('.back_button').removeClass('image_back_button');
+				$('.image_container').addClass('hide');
+				$('.nav_arrows').addClass('hide');
+
+				window.location.hash = '#images'
+			}
+
+			else {
+
+				$('.all_button_groups').removeClass('hide');
+				$('.state_buttons_group').removeClass('hide');
+				$('.back_button').removeClass('back_3').addClass('back_2');
+				$('.back_button').removeClass('image_back_button');
+				$('.image_container').addClass('hide');
+				$('.nav_arrows').addClass('hide');
 
       		window.location.hash = '#usa';
+
+      		}
 		})
 
 		$('.landscape_back_button').on('click', function(){
 
-			$('.all_button_groups').removeClass('hide');
-			$('.state_buttons_group').removeClass('hide');
-			$('.back_button').removeClass('back_3').addClass('back_2');
-			$('.back_button').removeClass('image_back_button');
-			$('.image_container').addClass('hide');
-			$('.nav_arrows').addClass('hide');
-			$('.landscape_back_button').addClass('hide');
+			if (window.location.hash == '#fiji') {
 
-      		window.location.hash = '#usa';
+				$('.all_button_groups').removeClass('hide');
+				$('.country_buttons_group').removeClass('hide');
+				$('.back_button').removeClass('back_3').addClass('back_2');
+				$('.back_button').removeClass('image_back_button');
+				$('.image_container').addClass('hide');
+				$('.nav_arrows').addClass('hide');
+				$('.landscape_back_button').addClass('hide');
+				$('.comment_toggle_up').show().addClass('hide');
+				$('.comment_toggle_down').hide();
+				$('.image_comment').hide();
+
+				window.location.hash = '#images'
+			}
+
+			if (window.location.hash == '#newzealand') {
+
+				$('.all_button_groups').removeClass('hide');
+				$('.country_buttons_group').removeClass('hide');
+				$('.back_button').removeClass('back_3').addClass('back_2');
+				$('.back_button').removeClass('image_back_button');
+				$('.image_container').addClass('hide');
+				$('.nav_arrows').addClass('hide');
+				$('.landscape_back_button').addClass('hide');
+				$('.comment_toggle_up').show().addClass('hide');
+				$('.comment_toggle_down').hide();
+				$('.image_comment').hide();
+
+				window.location.hash = '#images'
+			}
+
+			else {
+
+				$('.all_button_groups').removeClass('hide');
+				$('.state_buttons_group').removeClass('hide');
+				$('.back_button').removeClass('back_3').addClass('back_2');
+				$('.back_button').removeClass('image_back_button');
+				$('.image_container').addClass('hide');
+				$('.nav_arrows').addClass('hide');
+				$('.landscape_back_button').addClass('hide');
+				$('.comment_toggle_up').show().addClass('hide');
+				$('.comment_toggle_down').hide();
+				$('.image_comment').hide();
+
+				window.location.hash = '#usa';
+			}
 		})
 
 		//map arrows

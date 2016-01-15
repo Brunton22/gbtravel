@@ -29,8 +29,8 @@
 <body data-role='none'>
 	<div class="body_container" data-role='none'>
 		<div class="back_buttons hide">
-			<i class="back_button back_1 fa fa-arrow-circle-left fa-3x"></i>
-			<i class="landscape_back_button fa fa-times fa-2x hide"></i>
+			<i class="back_button back_1 fa fa-2x fa-arrow-circle-left"></i>
+			<i class="landscape_back_button fa fa-times hide"></i>
 		</div>
 
 		<div class="button_group all_button_groups">
@@ -63,8 +63,8 @@
 			<div class="maps" id="map1"></div>
 			<div class="maps" id="map2"></div>
 			<div class="map_arrows hide">
-				<div class="map_nav_left fa fa-chevron-circle-left fa-3x left_arrow nav_arrows_button"></div>
-				<div class="map_nav_right fa fa-chevron-circle-right fa-3x right_arrow nav_arrows_button"></div>
+				<div class="map_nav_left fa fa-chevron-circle-left fa-2x left_arrow nav_arrows_button"></div>
+				<div class="map_nav_right fa fa-chevron-circle-right fa-2x right_arrow nav_arrows_button"></div>
 			</div>
 		</div>
 
@@ -77,13 +77,14 @@
 			You can find the photos in the 'Photo' section of this site. The site also has a 'USA Route' section where you can view both
 			routes we travelled in the USA (from A to Z).</br></br>
 
-			Emily has also been writing a blog that you can view at<a href="https://homebirdflies.wordpress.com/" target="_blank"> homebirdflies.wordpress.com</a>. For a taster of 
-			the blog you can view her latest post by clicking <a href="">here</a>.
+			Emily has also been writing a blog that you can view at<a href="https://homebirdflies.wordpress.com/" target="_blank"> homebirdflies.wordpress.com</a>.
 
 		</div>
 
-		<div class="nav_arrows image_nav_left fa fa-chevron-circle-left fa-3x left_arrow nav_arrows_button hide"></div>
-		<div class="nav_arrows image_nav_right fa fa-chevron-circle-right fa-3x right_arrow nav_arrows_button hide"></div>
+		<div class="nav_arrows image_nav_left fa fa-chevron-circle-left fa-2x left_arrow nav_arrows_button hide"></div>
+		<div class="nav_arrows image_nav_right fa fa-chevron-circle-right fa-2x right_arrow nav_arrows_button hide"></div>
+		<i class="fa fa-caret-square-o-up comment_toggle_up comment_toggle hide"></i>
+		<i class="fa fa-caret-square-o-down comment_toggle_down comment_toggle"></i>
 
 	</div>
 </body>

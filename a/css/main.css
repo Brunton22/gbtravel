@@ -184,16 +184,6 @@ html, body { height: 100%; width: 100%; margin: 0;}
     cursor: pointer;
   }
 
-  /* .right_arrow {
-    background-image: url("../imgs/arrow-right.png");
-    background-repeat: no-repeat;
-  }
-
-  .left_arrow {
-    background-image: url("../imgs/arrow-left.png");
-    background-repeat: no-repeat;
-  } */
-
 /*image_slider*/
 
   .image_container {
@@ -243,6 +233,11 @@ html, body { height: 100%; width: 100%; margin: 0;}
     position: absolute;
   }
 
+  .comment_toggle {
+    display: none;
+    color: #9E9D9D
+  }
+
 /*maps*/
 
   .maps {
@@ -265,7 +260,7 @@ html, body { height: 100%; width: 100%; margin: 0;}
   .map_nav_left {
     position: absolute;
     top: 47%;
-    right: 89%;
+    right: 86%;
   }
 
   .map_nav_right {
@@ -353,20 +348,22 @@ and (min-width : 980px){
   }
 
   .about_info {
-    right: 150px;
+    right: 105px;
+  }
+
+  .nav_arrows {
+    top: 50%;
   }
 
   .image_nav_left {
     position: absolute;
-    top: 50%;
     right: 82%;
     padding: 5px 10px 5px 10px;
   } 
 
   .image_nav_right {
     position: absolute;
-    top: 50%;
-    right: 0%;
+    right: 1%;
     padding: 5px 10px 5px 10px;
   }
 
@@ -418,9 +415,8 @@ and (min-width : 980px){
   }
 
   .map_nav_left{
-    right: 83%;
+    right: 80%;
   }
-
 }
 
 /*ipad*/
@@ -452,7 +448,7 @@ and (min-width : 980px){
 
     .image_nav_right{
       top: 40%;
-      right: -4.5%;
+      right: -4.4%;
       opacity: 0.8;
     }
 
@@ -462,8 +458,9 @@ and (min-width : 980px){
       opacity: 0.8;
     }
 
-    .back_button {
-      margin-left: 80%;
+    .back_buttons {
+      margin-left: 90%;
+      font-size: 2em;
     }
 
     .mp_buttons {
@@ -491,6 +488,11 @@ and (min-width : 980px){
 
     .map_nav_left {
       right: 84%;
+      font-size: 3em;
+    }
+
+    .map_nav_right {
+      font-size: 3em;
     }
 
     .landscape_back_button {
@@ -498,7 +500,11 @@ and (min-width : 980px){
     }
 
     .about_info {
-      right: 57px;
+      right: 81px;
+    }
+
+    .nav_arrows {
+      font-size: 3em;
     }
   }
 
@@ -529,7 +535,10 @@ and (min-width : 980px){
       font-size: 20px;
       width: 100%;
       text-indent: 10px;
-      padding-top: 5px;
+      height: 7%;
+      padding-left: 5%;
+      padding-top: 2%;
+      display: none;
     }
 
     .all_buttons {
@@ -538,6 +547,8 @@ and (min-width : 980px){
 
     .back_buttons {
       margin-right: 85%;
+      font-size: 1.5em;
+      left: 3%;
     }
 
     .back_button {
@@ -561,10 +572,11 @@ and (min-width : 980px){
 
     .nav_arrows {
       top: 43%;
+      font-size: 2.5em;
     }
 
     .image_nav_right {
-      right: -5%;
+      right: -6%;
     }
 
     .image_nav_left{
@@ -574,13 +586,25 @@ and (min-width : 980px){
     .landscape_back_button {
       display: block;
       position: absolute;
-      right: -49%;
+      right: -14%;
       color: #585252;
-      bottom: 0%;
+      top: -27px;
+      font-size: 1.5em;
     }
 
     .about_info {
       right: 97px;
+    }
+
+    .comment_toggle {
+      bottom: 2.5%;
+      position: absolute;
+      font-size: 2.5em;
+      left: 1%;
+    }
+
+    .comment_toggle_up {
+      display: block;
     }
 
 }
@@ -616,7 +640,7 @@ and (max-device-width : 750px) and (orientation: landscape){
   }
 
   .image_nav_right {
-    right: 0% ;
+    right: -2%;
     opacity: 0.5;
   }
 
@@ -632,6 +656,9 @@ and (max-device-width : 750px) and (orientation: landscape){
     bottom: 0%;
     width: 100%;
     display: none;
+    height: 7%;
+    padding-left: 5%;
+    padding-top: 2%;
   }
 
   .routes_title {
@@ -652,7 +679,7 @@ and (max-device-width : 750px) and (orientation: landscape){
   }
 
   .map_nav_left {
-    right: 88%;
+    right: 87%;
   }
 
   .map_nav_right {
@@ -664,11 +691,23 @@ and (max-device-width : 750px) and (orientation: landscape){
     position: absolute;
     right: 10%;
     color: #585252;
-    top: -10px;
+    top: -8px;
   }
 
   .about_info {
     right: 64px;
+  }
+
+  .comment_toggle_up {
+    display: block;
+  }
+
+  .comment_toggle {
+    position: absolute;
+    bottom: 2.7%;
+    opacity: 0.9;
+    color: #7B7676;
+    left: 1%;
   }
 
 }
