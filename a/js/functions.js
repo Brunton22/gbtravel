@@ -1,9 +1,8 @@
-$( document ).ready(function() {
+$( window ).ready(function() {
 
 	window.show_image = function(){
 
 		$('.all_button_groups').addClass('hide');
-		//$('.images').removeClass('hide');
 		$('.image_container').removeClass('hide');
 		$('.nav_arrows').removeClass('hide');
 		$('.back_button').addClass('image_back_button');
@@ -39,7 +38,6 @@ $( document ).ready(function() {
 		$('.section_big').removeClass('section_big', 1000);
 		$('.section_gone').removeClass('section_gone', 1000);
 		$('.about_info').addClass('hide');
-		//window.location.hash = '#main';
 	}
 
 	window.show_country_buttons = function() {

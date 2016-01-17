@@ -118,8 +118,8 @@ $(document).ready(function(){
 
 	$('.comment_toggle_up').on('click', function(){
 
-		$('.comment_toggle_up').hide();
-		$('.comment_toggle_down').show();
+		$('.comment_toggle_up').addClass('hide');
+		$('.comment_toggle_down').removeClass('hide');
 		$('.image_comment_'+image_no).slideToggle('slow', function(){
 
 		});
@@ -127,8 +127,8 @@ $(document).ready(function(){
 
 	$('.comment_toggle_down').on('click', function(){
 
-		$('.comment_toggle_up').show();
-		$('.comment_toggle_down').hide();
+		$('.comment_toggle_up').removeClass('hide');
+		$('.comment_toggle_down').addClass('hide');
 		$('.image_comment_'+image_no).slideToggle('slow', function(){
 
 		});

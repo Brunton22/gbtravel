@@ -1,0 +1,95 @@
+    .image_container {
+      height: 100%;
+      margin-left: 0px;
+      width:100%;
+    }
+
+    .image {
+      margin-top: auto;
+    }
+
+    .image_back_button {
+      display: none;
+    }
+
+    .image_comment {
+      height: 5%;
+      bottom: 0%;
+      font-size: 20px;
+      width: 100%;
+      text-indent: 10px;
+      height: 7%;
+      padding-left: 5%;
+      padding-top: 2%;
+      display: none;
+    }
+
+    .all_buttons {
+      width: 45%;
+    }
+
+    .back_buttons {
+      margin-right: 85%;
+      font-size: 1.5em;
+      left: 3%;
+    }
+
+    .back_button {
+      right: 0%;
+    }
+
+    .mp_buttons {
+      top: 50%;
+      font-size: 20px;
+    }
+
+    .state_buttons {
+      left: 30%;
+      font-size: 20px;
+    }
+
+    .country_buttons {
+      left: 30%;
+      font-size: 20px;
+    }
+
+    .nav_arrows {
+      top: 43%;
+      font-size: 2.5em;
+    }
+
+    .image_nav_right {
+      right: -6%;
+    }
+
+    .image_nav_left{
+      right: 89%;
+    }
+
+    .landscape_back_button {
+      display: block;
+      position: absolute;
+      right: -14%;
+      color: #585252;
+      top: -27px;
+      font-size: 1.5em;
+    }
+
+    .about_info {
+      right: 97px;
+    }
+
+    .comment_toggle {
+      bottom: 2.5%;
+      position: absolute;
+      font-size: 2.5em;
+      left: 1%;
+    }
+
+    .comment_toggle_up {
+      display: block;
+    }
+
+    .comment_toggle_down {
+      display: block;
+    }

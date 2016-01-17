@@ -1,0 +1,80 @@
+    .container {
+        width: auto;
+    }
+
+    .image_container {
+      width: 100%;
+      height: 45%;
+      margin-left: 0%
+     }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      margin-top: 25%;
+    }
+
+    .image_comment {
+      width: 100%;
+    }
+
+    .image_nav_right{
+      top: 40%;
+      right: -4.4%;
+      opacity: 0.8;
+    }
+
+    .image_nav_left{
+      top: 40%;
+      right: 89%;
+      opacity: 0.8;
+    }
+
+    .back_buttons {
+      margin-left: 90%;
+      font-size: 2em;
+    }
+
+    .mp_buttons {
+      height: 40%;
+      left: 38%;
+      top: 40%;
+      font-size: 25px;
+    }
+
+    .country_buttons {
+      height: 15%;
+      top: 10%;
+      font-size: 25px;
+    }
+
+    .state_buttons {
+      height: 15%;
+      top: 10%;
+      font-size: 25px;
+    }
+
+    .routes_title {
+      left: 45%;
+    }
+
+    .map_nav_left {
+      right: 84%;
+      font-size: 3em;
+    }
+
+    .map_nav_right {
+      font-size: 3em;
+    }
+
+    .landscape_back_button {
+      display: none;
+    }
+
+    .about_info {
+      right: 81px;
+    }
+
+    .nav_arrows {
+      font-size: 3em;
+    }

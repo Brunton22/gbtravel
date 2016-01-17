@@ -4,21 +4,23 @@
 
 <head>
 
-	<script src="a/js/jquery-1.10.2.js"></script>
-	<script src="a/js/jquery.mobile-1.4.5.min.js"></script>
-	<script src="a/js/jquery-ui.min.js"></script>
-	<script src="a/js/functions.js"></script>
-	<!--<script src="a/js/image_slider.js"></script>-->
-	<script src="a/js/web_nav.js"></script>
-	<script src="a/js/hash_change.js"></script>
+	<script src="a/js/jquery-1.12.0.min.js"></script>
+	<script async src="a/js/jquery-ui.min.js"></script>
+	<script async src="a/js/jquery.mobile-1.4.5.min.js"></script>
+	<script async src="a/js/functions.js"></script>
+	<script async src="a/js/hash_change.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script src="a/js/map.js"></script>
-	<script src="a/js/base.js"></script>
+	<script async src="a/js/base.js"></script>
 
 	<link rel="stylesheet" href="a/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="a/css/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" type="text/css" href="a/css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="a/css/main.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width : 980px)" href="a/css/pc_laptop.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-device-width : 750px) and (orientation: landscape)" href="a/css/phone_landscape.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1280px) and (orientation : portrait)" href="a/css/ipad.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)"href="a/css/ipad_landscape.css">
 
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
@@ -30,7 +32,7 @@
 	<div class="body_container" data-role='none'>
 		<div class="back_buttons hide">
 			<i class="back_button back_1 fa fa-2x fa-arrow-circle-left"></i>
-			<i class="landscape_back_button fa fa-times hide"></i>
+			<i class="landscape_back_button fa fa-2x fa-times hide"></i>
 		</div>
 
 		<div class="button_group all_button_groups">
@@ -84,7 +86,7 @@
 		<div class="nav_arrows image_nav_left fa fa-chevron-circle-left fa-2x left_arrow nav_arrows_button hide"></div>
 		<div class="nav_arrows image_nav_right fa fa-chevron-circle-right fa-2x right_arrow nav_arrows_button hide"></div>
 		<i class="fa fa-caret-square-o-up comment_toggle_up comment_toggle hide"></i>
-		<i class="fa fa-caret-square-o-down comment_toggle_down comment_toggle"></i>
+		<i class="fa fa-caret-square-o-down comment_toggle_down comment_toggle hide"></i>
 
 	</div>
 </body>

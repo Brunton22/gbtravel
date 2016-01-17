@@ -3,6 +3,29 @@ $(document).ready(function() {
 	draw_map1();
 	draw_map2();
 
+})
+
+
+
+$(window).ready(function() {
+	//selector cache
+
+	var $picture_button = $('.picture_button'),
+	$map_button = $('.map_button'),
+	$about_button = $('.about_button'),
+	$country_buttons_group = $('.country_buttons_group'),
+	$all_buttons = $('.all_buttons'),
+	$state_buttons_group = $('.state_buttons_group'),
+	$comment_toggle_up = $('.comment_toggle_up'),
+	$comment_toggle_down = $('.comment_toggle_down'),
+	$image_container = $('.image_container'),
+	$back_buttons = $('.back_buttons'),
+	$back_button = $('.back_button'),
+	$all_button_groups = $('.all_button_groups'),
+	$nav_arrows = $('.nav_arrows'),
+	$landscape_back_button = $('.landscape_back_button');
+
+
 	image_slider_loaded = '0';
 	image_no = '1';
 
@@ -18,7 +41,7 @@ $(document).ready(function() {
 			url: "a/php/main.php?action=get_country_buttons",
 			success: function(data){
 
-				$(".country_buttons_group").html(data);
+				$country_buttons_group.html(data);
 			 }
 		});
 
@@ -28,15 +51,15 @@ $(document).ready(function() {
 			url: "a/php/main.php?action=get_state_buttons",
 			success: function(data){
 
-				$(".state_buttons_group").html(data);
+				$state_buttons_group.html(data);
 			 }
 		});
 
 	//main_page_buttons
 
-		$('.picture_button').on("click", function() {
+		$picture_button.on("click", function() {
 
-			$('.all_buttons').data('clicked', false);
+			$all_buttons.data('clicked', false);
 			$(this).data('clicked', true);
 
 			window.location.hash = '#images';
@@ -45,13 +68,13 @@ $(document).ready(function() {
 			//web_nav();
 		})
 
-		$('.map_button').on("touchstart click", function() {
+		$map_button.on("touchstart click", function() {
 
 			window.location.hash = '#map';
 			show_map_section();
 		})
 
-		$('.about_button').on("touchstart click", function() {
+		$about_button.on("touchstart click", function() {
 
 			window.location.hash = '#about';
 			show_about_section();
@@ -59,9 +82,9 @@ $(document).ready(function() {
 
 	//country buttons
 
-		$('.country_buttons_group').on("click", ".USA_button", function(){
+		$country_buttons_group.on("click", ".USA_button", function(){
 
-			$('.all_buttons').data('clicked', false);
+			$all_buttons.data('clicked', false);
 			$(this).data('clicked', true);
 
 			window.location.hash = '#usa';
@@ -69,7 +92,7 @@ $(document).ready(function() {
 
 		})
 
-		$('.country_buttons_group').on("click", ".Fiji_button", function(){
+		$country_buttons_group.on("click", ".Fiji_button", function(){
 
 			if (image_slider_loaded == '0') {
 
@@ -86,11 +109,15 @@ $(document).ready(function() {
 
 			country = ( $(this).attr('id') );
 
-			$('.country_buttons_group').addClass('hide');
+			$country_buttons_group.addClass('hide');
 
 			window.location.hash = '#fiji';
 
-			$('.comment_toggle_up').removeClass('hide');
+			if ($comment_toggle_up.css('display') == 'block') {
+
+				$comment_toggle_up.removeClass('hide');
+
+			}
 
 			$.ajax ({
 				type: "POST",
@@ -98,18 +125,13 @@ $(document).ready(function() {
 				data: {country_id: country},
 				success: function(data){
 
-					$('.image_container').html(data);
+					$image_container.html(data);
 					$('.image').first().removeClass('o_image');
 					$('.image_comment').first().removeClass('o_comment');
 
 					var first_image = $('.image').first().attr('id');
 
 					setTimeout(image_loop_up(first_image), 2000);
-
-					$('.o_image').on('load', function(){
-						$('.image_loading').hide();
-					})
-
 
 				}
 			})
@@ -118,7 +140,7 @@ $(document).ready(function() {
 
 		})
 
-		$('.country_buttons_group').on("click", ".NewZealand_button", function(){
+		$country_buttons_group.on("click", ".NewZealand_button", function(){
 
 			if (image_slider_loaded == '0') {
 
@@ -135,11 +157,11 @@ $(document).ready(function() {
 
 			country = ( $(this).attr('id') );
 
-			$('.country_buttons_group').addClass('hide');
+			$country_buttons_group.addClass('hide');
 
 			window.location.hash = '#newzealand';
 
-			$('.comment_toggle_up').removeClass('hide');
+			$comment_toggle_up.removeClass('hide');
 
 			$.ajax ({
 				type: "POST",
@@ -147,18 +169,13 @@ $(document).ready(function() {
 				data: {country_id: country},
 				success: function(data){
 
-					$('.image_container').html(data);
+					$image_container.html(data);
 					$('.image').first().removeClass('o_image');
 					$('.image_comment').first().removeClass('o_comment');
 
 					var first_image = $('.image').first().attr('id');
 
 					setTimeout(image_loop_up(first_image), 2000);
-
-					$('.o_image').on('load', function(){
-						$('.image_loading').hide();
-					})
-
 
 				}
 			})
@@ -171,11 +188,11 @@ $(document).ready(function() {
 
 		$('.all_button').on("click", function(){
 
-			$('.country_buttons_group').addClass('hide');
+			$country_buttons_group.addClass('hide');
 
 		})
 
-		$('.state_buttons_group').on('click', '.state_buttons', function(){
+		$state_buttons_group.on('click', '.state_buttons', function(){
 
 			if (image_slider_loaded == '0') {
 
@@ -185,11 +202,8 @@ $(document).ready(function() {
 
 			}
 
-			else {
+			$comment_toggle_up.removeClass('hide');
 
-			};
-
-			$('.comment_toggle_up').removeClass('hide');
 
 			state = $(this).attr('id');
 
@@ -201,19 +215,13 @@ $(document).ready(function() {
 				data: {state_name: state},
 				success: function(data){
 
-					$('.image_container').html(data);
+					$image_container.html(data);
 					$('.image').first().removeClass('o_image');
 					$('.image_comment').first().removeClass('o_comment');
 
 					var first_image = $('.image').first().attr('id');
 
 					setTimeout(image_loop_up(first_image), 1000);
-
-					$('.o_image').on('load', function(){
-						$('.image_loading').hide();
-					})
-
-
 				}
 			})
 			
@@ -223,31 +231,31 @@ $(document).ready(function() {
 
 	//back button
 
-		$('.back_buttons').on("click", ".back_1", function(){
+		$back_buttons.on("click", ".back_1", function(){
 
 			window.location.hash = '#main';
 			show_main_buttons();
 		})
 
-		$('.back_buttons').on("click", ".back_2", function(){
+		$back_buttons.on("click", ".back_2", function(){
 
 			window.location.hash = '#images'
 
-			$('.state_buttons_group').addClass('hide');
-			$('.country_buttons_group').removeClass('hide');
-			$('.back_button').removeClass('back_2').addClass('back_1');
+			$state_buttons_group.addClass('hide');
+			$country_buttons_group.removeClass('hide');
+			$back_button.removeClass('back_2').addClass('back_1');
 		})
 
-		$('.back_buttons').on("click", ".image_back_button", function(){
+		$back_buttons.on("click", ".image_back_button", function(){
 
 			if (window.location.hash == '#fiji') {
 
-				$('.all_button_groups').removeClass('hide');
-				$('.country_buttons_group').removeClass('hide');
-				$('.back_button').removeClass('back_3').addClass('back_2');
-				$('.back_button').removeClass('image_back_button');
-				$('.image_container').addClass('hide');
-				$('.nav_arrows').addClass('hide');
+				$all_button_groups.removeClass('hide');
+				$country_buttons_group.removeClass('hide');
+				$back_button.removeClass('back_3').addClass('back_2');
+				$back_button.removeClass('image_back_button');
+				$image_container.addClass('hide');
+				$nav_arrows.addClass('hide');
 
 				window.location.hash = '#images'
 
@@ -255,78 +263,65 @@ $(document).ready(function() {
 
 			else if (window.location.hash == '#newzealand') {
 
-				$('.all_button_groups').removeClass('hide');
-				$('.country_buttons_group').removeClass('hide');
-				$('.back_button').removeClass('back_3').addClass('back_2');
-				$('.back_button').removeClass('image_back_button');
-				$('.image_container').addClass('hide');
-				$('.nav_arrows').addClass('hide');
+				$all_button_groups.removeClass('hide');
+				$country_buttons_group.removeClass('hide');
+				$back_button.removeClass('back_3').addClass('back_2');
+				$back_button.removeClass('image_back_button');
+				$image_container.addClass('hide');
+				$nav_arrows.addClass('hide');
 
 				window.location.hash = '#images'
 			}
 
 			else {
 
-				$('.all_button_groups').removeClass('hide');
-				$('.state_buttons_group').removeClass('hide');
-				$('.back_button').removeClass('back_3').addClass('back_2');
-				$('.back_button').removeClass('image_back_button');
-				$('.image_container').addClass('hide');
-				$('.nav_arrows').addClass('hide');
+				$all_button_groups.removeClass('hide');
+				$state_buttons_group.removeClass('hide');
+				$back_button.removeClass('back_3').addClass('back_2');
+				$back_button.removeClass('image_back_button');
+				$image_container.addClass('hide');
+				$nav_arrows.addClass('hide');
 
       		window.location.hash = '#usa';
 
       		}
 		})
 
-		$('.landscape_back_button').on('click', function(){
+		$landscape_back_button.on('click', function(){
+
+			function landscape_back(){
+
+				$all_button_groups.removeClass('hide');
+				$state_buttons_group.removeClass('hide');
+				$back_button.removeClass('back_3').addClass('back_2');
+				$back_button.removeClass('image_back_button');
+				$image_container.addClass('hide');
+				$nav_arrows.addClass('hide');
+				$landscape_back_button.addClass('hide');
+				$comment_toggle_up.show().addClass('hide');
+				$comment_toggle_down.hide();
+				$('image_comment').hide();
+			}
 
 			if (window.location.hash == '#fiji') {
 
-				$('.all_button_groups').removeClass('hide');
-				$('.country_buttons_group').removeClass('hide');
-				$('.back_button').removeClass('back_3').addClass('back_2');
-				$('.back_button').removeClass('image_back_button');
-				$('.image_container').addClass('hide');
-				$('.nav_arrows').addClass('hide');
-				$('.landscape_back_button').addClass('hide');
-				$('.comment_toggle_up').show().addClass('hide');
-				$('.comment_toggle_down').hide();
-				$('.image_comment').hide();
+				landscape_back();
 
-				window.location.hash = '#images'
+				window.location.hash = '#images';
 			}
 
 			if (window.location.hash == '#newzealand') {
 
-				$('.all_button_groups').removeClass('hide');
-				$('.country_buttons_group').removeClass('hide');
-				$('.back_button').removeClass('back_3').addClass('back_2');
-				$('.back_button').removeClass('image_back_button');
-				$('.image_container').addClass('hide');
-				$('.nav_arrows').addClass('hide');
-				$('.landscape_back_button').addClass('hide');
-				$('.comment_toggle_up').show().addClass('hide');
-				$('.comment_toggle_down').hide();
-				$('.image_comment').hide();
+				landscape_back();
 
-				window.location.hash = '#images'
+				window.location.hash = '#images';
 			}
 
 			else {
 
-				$('.all_button_groups').removeClass('hide');
-				$('.state_buttons_group').removeClass('hide');
-				$('.back_button').removeClass('back_3').addClass('back_2');
-				$('.back_button').removeClass('image_back_button');
-				$('.image_container').addClass('hide');
-				$('.nav_arrows').addClass('hide');
-				$('.landscape_back_button').addClass('hide');
-				$('.comment_toggle_up').show().addClass('hide');
-				$('.comment_toggle_down').hide();
-				$('.image_comment').hide();
+				landscape_back();
 
-				window.location.hash = '#usa';
+				window.location.hash = '#usa';;
 			}
 		})
 
