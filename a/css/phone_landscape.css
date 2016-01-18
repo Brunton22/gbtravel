@@ -39,7 +39,7 @@
   .image_comment {
     bottom: 0%;
     width: 100%;
-    display: none;
+    /*display: none;*/
     height: 7%;
     padding-left: 5%;
     padding-top: 2%;

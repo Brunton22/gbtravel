@@ -37,7 +37,7 @@
 
 		<div class="button_group all_button_groups">
 			<div class="picture_section main_sections">
-				<button class="all_buttons mp_buttons picture_button picture_buttons centered" data-role='none'>Pictures</button>
+				<button class="all_buttons mp_buttons picture_button picture_buttons centered" data-role='none'>Images</button>
 
 				<div class="button_group all_button_groups secondary_buttons country_buttons_group hide">
 				</div>

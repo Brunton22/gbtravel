@@ -194,6 +194,8 @@ $(window).ready(function() {
 
 		$state_buttons_group.on('click', '.state_buttons', function(){
 
+			$comment_toggle_down.removeClass('hide');
+
 			if (image_slider_loaded == '0') {
 
 				$.getScript('a/js/image_slider.js');
@@ -201,8 +203,6 @@ $(window).ready(function() {
 				image_slider_loaded = '1';
 
 			}
-
-			$comment_toggle_up.removeClass('hide');
 
 
 			state = $(this).attr('id');
@@ -216,6 +216,7 @@ $(window).ready(function() {
 				success: function(data){
 
 					$image_container.html(data);
+
 					$('.image').first().removeClass('o_image');
 					$('.image_comment').first().removeClass('o_comment');
 

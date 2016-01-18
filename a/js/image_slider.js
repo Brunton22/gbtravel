@@ -120,18 +120,14 @@ $(document).ready(function(){
 
 		$('.comment_toggle_up').addClass('hide');
 		$('.comment_toggle_down').removeClass('hide');
-		$('.image_comment_'+image_no).slideToggle('slow', function(){
-
-		});
+		$('.image_comment_'+image_no).toggle();
 	})
 
 	$('.comment_toggle_down').on('click', function(){
 
 		$('.comment_toggle_up').removeClass('hide');
 		$('.comment_toggle_down').addClass('hide');
-		$('.image_comment_'+image_no).slideToggle('slow', function(){
-
-		});
+		$('.image_comment_'+image_no).toggle();
 	})
 
 })
