@@ -244,6 +244,13 @@ html, body {
     color: #9E9D9D
   }
 
+  .image_loader {
+    position: absolute;
+    top: 38%;
+    left: 47%;
+    color: white;
+  }
+
 /*maps*/
 
   .maps {

@@ -18,7 +18,7 @@
   }
 
   .nav_arrows {
-    top: 50%;
+    top: 48%;
   }
 
   .image_nav_left {
@@ -40,7 +40,7 @@
   }
 
   .image {
-    margin-top: 8%;
+    margin-top: 6%;
   }
 
   .image_comment {
@@ -82,5 +82,10 @@
 
   .map_nav_left{
     right: 80%;
+  }
+
+  .image_loader {
+    top: 50%;
+    left: 50%;
   }
 }

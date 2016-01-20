@@ -25,6 +25,11 @@
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Follow my journey through the images I've seen">
+	<meta name="keywords" content="ajourneyinimages,journeyinimages,journey,images,graeme,brunton,graemebrunton">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta charset="UTF-8">
 
 </head>
 
@@ -56,6 +61,7 @@
 
 		<div class="image_container hide">
 		</div>
+		<i class="fa fa-spinner fa-pulse image_loader hide"></i>
 
 		<div class="usa_routes">
 			<div class="routes_title">
@@ -71,7 +77,7 @@
 		</div>
 
 		<div class="about_info hide">
-			In September 2015 my partner, Emily and I (Graeme) left our jobs and our homes to travel.</br>
+			In September 2015, my partner Emily and I left our jobs and our homes to travel.</br>
 			Our first stop was the United States where we went on a 3 month road trip in an RV. We drove - and camped - through
 			the southern states for 6 weeks and then went to the west coast to do the same for another 6 weeks.</br>
 			We travelled to many beautiful places and I created this site in order to show the photos we've taken along the way.</br></br>

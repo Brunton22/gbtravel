@@ -15,7 +15,7 @@ $(document).ready(function(){
 
 		while (($('#'+image_no).length) == 0);
 	}
-
+	
 	function image_right() {
 
 		var last = parseInt( $('.image').last().attr('id') );

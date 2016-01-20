@@ -39,7 +39,6 @@
   .image_comment {
     bottom: 0%;
     width: 100%;
-    /*display: none;*/
     height: 7%;
     padding-left: 5%;
     padding-top: 2%;
@@ -96,4 +95,9 @@
     opacity: 0.9;
     color: #7B7676;
     left: 1%;
+  }
+
+  .image_loader {
+    top: 46%;
+    left: 48%;
   }

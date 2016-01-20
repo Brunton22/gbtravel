@@ -3,7 +3,6 @@ $( window ).ready(function() {
 	window.show_image = function(){
 
 		$('.all_button_groups').addClass('hide');
-		$('.image_container').removeClass('hide');
 		$('.nav_arrows').removeClass('hide');
 		$('.back_button').addClass('image_back_button');
 		$('.landscape_back_button').removeClass('hide');
@@ -97,12 +96,74 @@ $( window ).ready(function() {
 
 	window.show_about_section = function() {
 		
-		$('about_section').removeClass('section_gone');
+		$('.about_section').removeClass('section_gone');
 		$('.all_buttons').addClass('hide');
 		$('.about_section').addClass('section_big', 1000);
 		$('.map_section').addClass('section_gone', 1000);
 		$('.picture_section').addClass('section_gone', 1000);
 		$('.back_buttons').removeClass('hide', 1000);
 		$('.about_info').removeClass('hide', 1000);
+	}
+
+	window.image_loader = function() {
+
+		$('.image_loader').removeClass('hide');
+
+		$('.image').first().removeClass('o_image');
+		$('.image_comment').first().removeClass('o_comment');
+
+		var first_image = $('.image').first().attr('id');
+
+		setTimeout(image_loop_up(first_image), 2000);
+
+		$('.image_'+image_no).load(function(){
+
+			$('.image_loader').addClass('hide');
+			$('.image_container').removeClass('hide');
+
+		})
+	}
+
+	window.image_back = function() {
+
+		$('.all_button_groups').removeClass('hide');
+		$('.state_buttons_group').addClass('hide');
+		$('.back_button').removeClass('back_3').addClass('back_1');
+		$('.back_button').removeClass('image_back_button');
+		$('.image_container').addClass('hide');
+		$('.nav_arrows').addClass('hide');
+		$('.image_loader').addClass('hide');
+		$('.comment_toggle_down').addClass('hide');
+		$('comment_toggle_up').addClass('hide');
+	}
+
+	window.load_image_slider_js = function() {
+
+		if (image_slider_loaded == '0') {
+
+			$.getScript('a/js/image_slider.js');
+
+			image_slider_loaded = '1';
+
+		}
+	}
+
+	window.get_country_images_ajax = function() {
+
+		$('.comment_toggle_down').removeClass('hide');
+
+		$.ajax ({
+			type: "POST",
+			url: "a/php/images.php?action=get_country_images",
+			data: {country_id: country},
+			success: function(data){
+
+				$('.image_container').html(data);
+				image_loader();
+
+			}
+		})
+
+		show_image()
 	}
 })
