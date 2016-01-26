@@ -120,6 +120,7 @@ $( window ).ready(function() {
 
 			$('.image_loader').addClass('hide');
 			$('.image_container').removeClass('hide');
+			$('.comment_toggle_down').removeClass('hide');
 
 		})
 	}
@@ -149,8 +150,6 @@ $( window ).ready(function() {
 	}
 
 	window.get_country_images_ajax = function() {
-
-		$('.comment_toggle_down').removeClass('hide');
 
 		$.ajax ({
 			type: "POST",

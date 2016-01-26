@@ -4,6 +4,8 @@
 
 <head>
 
+	<title>A Journey In Images</title>
+
 	<script src="a/js/jquery-1.12.0.min.js"></script>
 	<script async src="a/js/jquery-ui.min.js"></script>
 	<script async src="a/js/jquery.mobile-1.4.5.min.js"></script>
@@ -17,6 +19,7 @@
 	<link rel="stylesheet" type="text/css" href="a/css/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" type="text/css" href="a/css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="a/css/main.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 370px)" href="a/css/smaller_phones.css">
 	<link rel="stylesheet" type="text/css" media="screen and (min-width : 980px)" href="a/css/pc_laptop.css">
 	<link rel="stylesheet" type="text/css" media="screen and (max-device-width : 750px) and (orientation: landscape)" href="a/css/phone_landscape.css">
 	<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1280px) and (orientation : portrait)" href="a/css/ipad.css">
@@ -26,7 +29,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Follow my journey through the images I've seen">
-	<meta name="keywords" content="ajourneyinimages,journeyinimages,journey,images,graeme,brunton,graemebrunton">
+	<meta name="keywords" content="ajourneyinimages,journeyinimages,journey,images,graeme,brunton,graemebrunton,travel,usa,fiji,newzealand,new,zealand,emily,hall,emilyhall,homebirdflies">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<meta charset="UTF-8">
@@ -65,8 +68,8 @@
 
 		<div class="usa_routes">
 			<div class="routes_title">
-				<div class="hide" id="title_1">Route 1</div>
-				<div class="hide" id="title_2">Route 2</div>
+				<div class="hide map_title" id="title_1">Route 1</div>
+				<div class="hide map_title" id="title_2">Route 2</div>
 			</div>
 			<div class="maps" id="map1"></div>
 			<div class="maps" id="map2"></div>
@@ -85,7 +88,7 @@
 			You can find the photos in the 'Photo' section of this site. The site also has a 'USA Route' section where you can view both
 			routes we travelled in the USA (from A to Z).</br></br>
 
-			Emily has also been writing a blog that you can view at<a href="https://homebirdflies.wordpress.com/" target="_blank"> homebirdflies.wordpress.com</a>.
+			Emily has also been writing a blog that you can view at <a href="https://homebirdflies.wordpress.com/">homebirdflies.wordpress.com</a>.
 
 		</div>
 

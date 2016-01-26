@@ -2,8 +2,6 @@ html, body {
   height: 100%; 
   width: 100%; 
   margin: 0;
-  overflow: scroll;
-  scroll-behaviour: smooth;
   }
 
   .body_container {
@@ -166,7 +164,7 @@ html, body {
 
   .image_desc {
     position: absolute;
-    top:90%;
+    top:92%;
     background-color: grey;
     color: white;
     width: inherit;
@@ -207,7 +205,7 @@ html, body {
 
   .image_nav_left {
     position: absolute;
-    top: 65%;
+    top: 63%;
     right: 12%;
     padding: 5px 10px 5px 10px;
   }
@@ -217,7 +215,7 @@ html, body {
 
   .image_nav_right {
     position: absolute;
-    top: 65%;
+    top: 63%;
     right: 0%;
     padding: 5px 10px 5px 10px;
   }

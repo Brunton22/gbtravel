@@ -22,7 +22,6 @@ $(document).ready(function() {
 			 }
 		});
 
-
 		$.ajax({
 			type: "POST",
 			url: "a/php/main.php?action=get_state_buttons",

@@ -15,7 +15,7 @@
 
   function country_buttons(){
 
-		include ('connect_db.php');
+  		include 'connect_db.php';
 
 		$sql = "SELECT * FROM countries";
 	 	$result = mysqli_query($conn, $sql);

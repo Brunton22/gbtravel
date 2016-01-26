@@ -1,103 +1,103 @@
-  .image_container {
-    height:100%;
-    width: 100%;
-    margin-left: 0%;
-  }
+.image_container {
+  height:100%;
+  width: 100%;
+  margin-left: 0%;
+}
 
-  .image {
-    margin-top: 0%;
-    border: none;
-  }
+.image {
+  margin-top: 0%;
+  border: none;
+}
 
-  .image_back_button {
-    display: none;
-  }
+.image_back_button {
+  display: none;
+}
 
-  .back_buttons {
-    margin-left: 91%;
-    margin-top: 1%;
-  }
+.back_buttons {
+  margin-left: 91%;
+  margin-top: 1%;
+}
 
-  .image_nav_left {
-    right: 93%;
-    opacity: 0.5;
-  }
+.image_nav_left {
+  right: 93%;
+  opacity: 0.5;
+}
 
-  .image_nav_right {
-    right: -2%;
-    opacity: 0.5;
-  }
+.image_nav_right {
+  right: -2%;
+  opacity: 0.5;
+}
 
-  .mp_buttons {
-    left: 40%;
-  }
+.mp_buttons {
+  left: 40%;
+}
 
-  .country_buttons {
-    top: 10%;
-  }
+.country_buttons {
+  top: 10%;
+}
 
-  .image_comment {
-    bottom: 0%;
-    width: 100%;
-    height: 7%;
-    padding-left: 5%;
-    padding-top: 2%;
-  }
+.image_comment {
+  bottom: 0%;
+  width: 100%;
+  height: 7%;
+  padding-left: 5%;
+  padding-top: 2%;
+}
 
-  .routes_title {
-    top: 3%;
-    left: 47%;
-  }
+.routes_title {
+  top: 3%;
+  left: 47%;
+}
 
-  .nav_arrows {
-    position: absolute;
-    height: 9%;
-    width: 5%;
-    top: 40%;
-  }
+.nav_arrows {
+  position: absolute;
+  height: 9%;
+  width: 5%;
+  top: 40%;
+}
 
-  .nav_arrows_button {
-    height: 9%;
-    width: 5%;
-  }
+.nav_arrows_button {
+  height: 9%;
+  width: 5%;
+}
 
-  .map_nav_left {
-    right: 87%;
-  }
+.map_nav_left {
+  right: 87%;
+}
 
-  .map_nav_right {
-    right: 7%;
-  }
+.map_nav_right {
+  right: 7%;
+}
 
-  .landscape_back_button {
-    display: block;
-    position: absolute;
-    right: 10%;
-    color: #585252;
-    top: -8px;
-  }
+.landscape_back_button {
+  display: block;
+  position: absolute;
+  right: 10%;
+  color: #585252;
+  top: -8px;
+}
 
-  .about_info {
-    right: 64px;
-  }
+.about_info {
+  right: 64px;
+}
 
-  .comment_toggle_up {
-    display: block;
-  }
+.comment_toggle_up {
+  display: block;
+}
 
-  .comment_toggle_down {
-    display: block;
-  }
+.comment_toggle_down {
+  display: block;
+}
 
-  .comment_toggle {
-    position: absolute;
-    bottom: 2.7%;
-    opacity: 0.9;
-    color: #7B7676;
-    left: 1%;
-  }
+.comment_toggle {
+  position: absolute;
+  bottom: 2.7%;
+  opacity: 0.9;
+  color: #7B7676;
+  left: 1%;
+}
 
-  .image_loader {
-    top: 46%;
-    left: 48%;
-  }
+.image_loader {
+  top: 46%;
+  left: 48%;
+}
