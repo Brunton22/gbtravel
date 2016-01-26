@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).load(function() {
 
 	window.draw_map1 = function() {
 
@@ -34,7 +34,7 @@ $(document).ready(function() {
 		var mapCanvas = document.getElementById('map1');
 		var mapOptions = {
 
-			center: new google.maps.LatLng(35.880630, -84.793253),
+			center: new google.maps.LatLng(33.080630, -84.793253),
 			zoom: 5,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 
@@ -123,5 +123,8 @@ $(document).ready(function() {
 			})(marker, i));
 		}
 	}
+
+	draw_map1();
+	draw_map2();
 	
 })

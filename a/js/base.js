@@ -1,8 +1,5 @@
 $(document).ready(function() {
 
-	draw_map1();
-	draw_map2();
-
 	image_slider_loaded = '0';
 	image_no = '1';
 
