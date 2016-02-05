@@ -12,7 +12,7 @@
 	<script async src="a/js/functions.js"></script>
 	<script async src="a/js/hash_change.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
-	<script src="a/js/map.js"></script>
+	<script async src="a/js/map.js"></script>
 	<script async src="a/js/base.js"></script>
 
 	<link rel="stylesheet" href="a/font-awesome/css/font-awesome.min.css">
@@ -28,7 +28,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Follow my journey through the images I've seen">
+	<meta name="description" content="Follow my journey around the world through the images I've seen">
 	<meta name="keywords" content="ajourneyinimages,journeyinimages,journey,images,graeme,brunton,graemebrunton,travel,usa,fiji,newzealand,new,zealand,emily,hall,emilyhall,homebirdflies">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">

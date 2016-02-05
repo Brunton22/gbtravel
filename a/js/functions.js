@@ -4,6 +4,7 @@ $( window ).ready(function() {
 
 		$('.all_button_groups').addClass('hide');
 		$('.nav_arrows').removeClass('hide');
+		$('.back_button').removeClass('back_1').removeClass('back_2');
 		$('.back_button').addClass('image_back_button');
 		$('.landscape_back_button').removeClass('hide');
 	}
@@ -73,7 +74,7 @@ $( window ).ready(function() {
 		$('.picture_section').removeClass('section_gone').addClass('section_big', 1000);
 		$('.map_section').addClass('section_gone', 1000);
 		$('.about_section').addClass('section_gone', 1000);
-		$('.back_button').removeClass('back_2').addClass('back_3');
+		$('.back_button').removeClass('back_1').addClass('back_2');
 		$('.about_info').addClass('hide');
 
 	}
@@ -105,7 +106,7 @@ $( window ).ready(function() {
 		$('.about_info').removeClass('hide', 1000);
 	}
 
-	window.image_loader = function() {
+	window.image_loader = function() { 
 
 		$('.image_loader').removeClass('hide');
 
@@ -128,17 +129,17 @@ $( window ).ready(function() {
 	window.image_back = function() {
 
 		$('.all_button_groups').removeClass('hide');
-		$('.state_buttons_group').addClass('hide');
-		$('.back_button').removeClass('back_3').addClass('back_1');
+		//$('.state_buttons_group').addClass('hide');
+		//$('.back_button').removeClass('back_3').addClass('back_1');
 		$('.back_button').removeClass('image_back_button');
 		$('.image_container').addClass('hide');
 		$('.nav_arrows').addClass('hide');
 		$('.image_loader').addClass('hide');
 		$('.comment_toggle_down').addClass('hide');
-		$('comment_toggle_up').addClass('hide');
+		$('.comment_toggle_up').addClass('hide');
 	}
 
-	window.load_image_slider_js = function() {
+	window.load_image_slider_js = function(image_slider_loaded) {
 
 		if (image_slider_loaded == '0') {
 
@@ -149,7 +150,24 @@ $( window ).ready(function() {
 		}
 	}
 
-	window.get_country_images_ajax = function() {
+	window.get_state_images_ajax = function(state) {
+
+		$.ajax ({
+			type: "POST",
+			url: "a/php/images.php?action=get_state_id",
+			data: {state_name: state},
+			success: function(data){
+
+				$('.image_container').html(data);
+				image_loader();
+			}
+		})
+
+		show_image();
+
+	}
+
+	window.get_country_images_ajax = function(country) {
 
 		$.ajax ({
 			type: "POST",

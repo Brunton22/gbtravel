@@ -22,12 +22,19 @@ $( document ).ready(function() {
 
     else if (window.location.hash == '#fiji') {
 
-      show_image();
+      var country = '2';
+
+      get_country_images_ajax(country);
+
+      $('.image_container').removeClass('hide');
       $('.back_button').removeClass('back_2').removeClass('back_1').addClass('back_3');
     }
 
     else if (window.location.hash == '#newzealand') {
 
+      var country = '3';
+
+      $('.image_container').removeClass('hide');
       show_image();
       $('.back_button').removeClass('back_2').removeClass('back_1').addClass('back_3');
     }
@@ -47,7 +54,10 @@ $( document ).ready(function() {
 
     else {
 
-      show_image();
+      var state_hash = window.location.hash;
+      var state = state_hash.replace('#', '');
+      get_state_images_ajax(state); 
+      $('.image_container').removeClass('hide');
       $('.back_button').removeClass('back_2').removeClass('back_1').addClass('back_3');
     }
   }

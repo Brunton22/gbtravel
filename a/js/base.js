@@ -1,7 +1,10 @@
 $(document).ready(function() {
 
-	image_slider_loaded = '0';
-	image_no = '1';
+	"use strict";
+
+	var image_slider_loaded = '0';
+	var image_no = '1';
+	var hash_on ='0';
 
 	if (window.location.hash == '') {
 
@@ -32,22 +35,25 @@ $(document).ready(function() {
 
 		$('.picture_button').on("click", function() {
 
-			$('.all_buttons').data('clicked', false);
-			$(this).data('clicked', true);
+			hash_on = '1';
 
 			window.location.hash = '#images';
 			show_country_buttons();
 
-			//web_nav();
 		})
 
 		$('.map_button').on("touchstart click", function() {
 
+			hash_on = '1';
+
 			window.location.hash = '#map';
 			show_map_section();
+
 		})
 
 		$('.about_button').on("touchstart click", function() {
+
+			hash_on = '1';
 
 			window.location.hash = '#about';
 			show_about_section();
@@ -57,29 +63,29 @@ $(document).ready(function() {
 
 		$('.country_buttons_group').on("click", ".country_buttons", function(){
 
-			load_image_slider_js();
+			load_image_slider_js(image_slider_loaded);
 
-			country = ( $(this).attr('id') );
+			var country = ( $(this).attr('id') );
 
 			$('.country_buttons_group').addClass('hide');
+
+			hash_on = '1';
 
 			if ( country == '2'){
 
 				window.location.hash = '#fiji';
-				get_country_images_ajax();
+				get_country_images_ajax(country);
+
 
 			}
 
 			else if ( country == '3' ){
 
 				window.location.hash = '#newzealand';
-				get_country_images_ajax();
+				get_country_images_ajax(country);
 			}
 
 			else if ( country == '1' ) {
-
-				$('.all_buttons').data('clicked', false);
-				$(this).data('clicked', true);
 
 				window.location.hash = '#usa';
 				show_state_buttons();
@@ -96,37 +102,32 @@ $(document).ready(function() {
 
 		$('.state_buttons_group').on('click', '.state_buttons', function(){
 
+			hash_on = '1';
+
 			$('.comment_toggle_down').removeClass('hide');
 
 			load_image_slider_js();
 
-			state = $(this).attr('id');
+			var state = $(this).attr('id');
 
 			window.location.hash = '#'+state;
 
-			$.ajax ({
-				type: "POST",
-				url: "a/php/images.php?action=get_state_id",
-				data: {state_name: state},
-				success: function(data){
-
-					$('.image_container').html(data);
-					image_loader();
-				}
-			})	 
-
-			show_image();
+			get_state_images_ajax(state);	 
 		})
 
 	//back button
 
 		$('.back_buttons').on("click", ".back_1", function(){
 
+			hash_on = '1';
+
 			window.location.hash = '#main';
 			show_main_buttons();
 		})
 
 		$('.back_buttons').on("click", ".back_2", function(){
+
+			hash_on = '1';
 
 			window.location.hash = '#images'
 
@@ -137,24 +138,32 @@ $(document).ready(function() {
 
 		$('.back_buttons').on("click", ".image_back_button", function(){
 
+			hash_on = '1';
+
 			if (window.location.hash == '#fiji') {
 
+				$('.state_buttons_group').addClass('hide');
+				$('.back_button').removeClass('back_3').addClass('back_1');
 				image_back();
 
-				window.location.hash = '#images'
+				window.location.hash = '#images';
 
 			}
 
 			else if (window.location.hash == '#newzealand') {
 
+				$('.state_buttons_group').addClass('hide');
+				$('.back_button').removeClass('back_3').addClass('back_1');
 				image_back();
 
-				window.location.hash = '#images'
+				window.location.hash = '#images';
 			}
 
 			else {
 
+			$('.back_button').removeClass('back_3').addClass('back_2');	
 			image_back();
+			$('.country_buttons_group').addClass('hide');
 
       		window.location.hash = '#usa';
 
@@ -173,11 +182,13 @@ $(document).ready(function() {
 				$('.landscape_back_button').addClass('hide');
 				$('.comment_toggle_up').addClass('hide');
 				$('.comment_toggle_down').addClass('hide');
-				$('image_comment').hide();
+				$('.image_comment').hide();
 
 			}
 
-			if (window.location.hash == '#fiji') {
+			hash_on = '1';
+
+			if (window.location.hash == '#2') {
 
 				landscape_back();
 				$('.country_buttons_group').removeClass('hide');
@@ -246,7 +257,16 @@ $(document).ready(function() {
 
 		$(window).on('hashchange', function() {
 
+			if ( hash_on == '0' ) {
+
 			hash_change();
+
+			}
+
+			else {
+
+				hash_on = '0';
+			}
 
 		});
 
