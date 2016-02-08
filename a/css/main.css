@@ -36,7 +36,7 @@ html, body {
 
   .map_section {
     height:33.3333%;
-    background-color: #7d5d6d;
+    background-color: #765B8E;
   }
 
   .about_section {
@@ -104,7 +104,7 @@ html, body {
   }
 
   .map_button {
-    background-color: #7d5d6d;
+    background-color: #765B8E;
     color: #4E3744;
     border: 2px solid #4E3744;
   }

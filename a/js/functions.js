@@ -52,14 +52,9 @@ $( window ).ready(function() {
 		$('.back_buttons').removeClass('hide', 1000);
 		$('.about_info').addClass('hide');
 
-		if ( $('.picture_section').hasClass('section_big') ) {
-
-		}
-
-		else {
+		if ( !$('.picture_section').hasClass('section_big') ) {
 
 			$('.picture_section').removeClass('section_gone').addClass('section_big', 1000)
-
 		}
 	}
 
@@ -129,58 +124,11 @@ $( window ).ready(function() {
 	window.image_back = function() {
 
 		$('.all_button_groups').removeClass('hide');
-		//$('.state_buttons_group').addClass('hide');
-		//$('.back_button').removeClass('back_3').addClass('back_1');
 		$('.back_button').removeClass('image_back_button');
 		$('.image_container').addClass('hide');
 		$('.nav_arrows').addClass('hide');
 		$('.image_loader').addClass('hide');
 		$('.comment_toggle_down').addClass('hide');
 		$('.comment_toggle_up').addClass('hide');
-	}
-
-	window.load_image_slider_js = function(image_slider_loaded) {
-
-		if (image_slider_loaded == '0') {
-
-			$.getScript('a/js/image_slider.js');
-
-			image_slider_loaded = '1';
-
-		}
-	}
-
-	window.get_state_images_ajax = function(state) {
-
-		$.ajax ({
-			type: "POST",
-			url: "a/php/images.php?action=get_state_id",
-			data: {state_name: state},
-			success: function(data){
-
-				$('.image_container').html(data);
-				image_loader();
-			}
-		})
-
-		show_image();
-
-	}
-
-	window.get_country_images_ajax = function(country) {
-
-		$.ajax ({
-			type: "POST",
-			url: "a/php/images.php?action=get_country_images",
-			data: {country_id: country},
-			success: function(data){
-
-				$('.image_container').html(data);
-				image_loader();
-
-			}
-		})
-
-		show_image()
 	}
 })

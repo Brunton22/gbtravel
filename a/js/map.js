@@ -37,7 +37,6 @@ $(window).load(function() {
 			center: new google.maps.LatLng(33.080630, -84.793253),
 			zoom: 5,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
-
 		}
 
 		var map = new google.maps.Map(mapCanvas, mapOptions);
@@ -99,7 +98,6 @@ $(window).load(function() {
 			center: new google.maps.LatLng(36.714365, -116.143085),
 			zoom: 5,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
-
 		}
 
 		var map = new google.maps.Map(mapCanvas, mapOptions);
@@ -125,6 +123,5 @@ $(window).load(function() {
 	}
 
 	draw_map1();
-	draw_map2();
-	
+	draw_map2();	
 })

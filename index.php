@@ -11,6 +11,7 @@
 	<script async src="a/js/jquery.mobile-1.4.5.min.js"></script>
 	<script async src="a/js/functions.js"></script>
 	<script async src="a/js/hash_change.js"></script>
+	<script src="a/js/image_slider.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script async src="a/js/map.js"></script>
 	<script async src="a/js/base.js"></script>
