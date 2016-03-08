@@ -8,13 +8,13 @@
 
 	<script src="a/js/jquery-1.12.0.min.js"></script>
 	<script async src="a/js/jquery-ui.min.js"></script>
-	<script async src="a/js/jquery.mobile-1.4.5.min.js"></script>
 	<script async src="a/js/functions.js"></script>
 	<script async src="a/js/hash_change.js"></script>
 	<script src="a/js/image_slider.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script async src="a/js/map.js"></script>
 	<script async src="a/js/base.js"></script>
+	<script src="a/js/jquery.mobile-1.4.5.min.js"></script>
 
 	<link rel="stylesheet" href="a/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="a/css/jquery.mobile-1.4.5.min.css">
@@ -27,6 +27,8 @@
 	<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)"href="a/css/ipad_landscape.css">
 
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link id="favicon" rel="shortcut icon" href="a/imgs/logo.ico"/>
+
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Follow my journey around the world through the images I've seen">

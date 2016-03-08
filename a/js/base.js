@@ -206,10 +206,10 @@ $(document).ready(function() {
 
 		hash_on = '1';
 
-		if (window.location.hash == '#2') {
+		if (window.location.hash == '#fiji') {
 
 			landscape_back();
-			$('.country_buttons_group').removeClass('hide');
+			$('.state_buttons_group').addClass('hide');
 
 			window.location.hash = '#images';
 		}
@@ -217,7 +217,7 @@ $(document).ready(function() {
 		else if (window.location.hash == '#newzealand') {
 
 			landscape_back();
-			$('.country_buttons_group').removeClass('hide');
+			$('.state_buttons_group').addClass('hide');
 
 			window.location.hash = '#images';
 		}
@@ -225,7 +225,7 @@ $(document).ready(function() {
 		else {
 
 			landscape_back();
-			$('.state_buttons_group').removeClass('hide');
+			$('.country_buttons_group').addClass('hide');
 
 			window.location.hash = '#usa';;
 		}

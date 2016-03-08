@@ -160,6 +160,10 @@ html, body {
     cursor: pointer;
   }
 
+  .Nevada_button {
+    margin-bottom: 5%;
+  }
+
 /*picture page*/
 
   .image_desc {
