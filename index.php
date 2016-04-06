@@ -6,6 +6,8 @@
 
 	<title>A Journey In Images</title>
 
+	<meta charset="UTF-8">
+
 	<script src="a/js/jquery-1.12.0.min.js"></script>
 	<script async src="a/js/jquery-ui.min.js"></script>
 	<script async src="a/js/functions.js"></script>
@@ -20,11 +22,11 @@
 	<link rel="stylesheet" type="text/css" href="a/css/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" type="text/css" href="a/css/jquery-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="a/css/main.css">
-	<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 370px)" href="a/css/smaller_phones.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 320px) and (max-width: 370px)" href="a/css/smaller_phones.css">
 	<link rel="stylesheet" type="text/css" media="screen and (min-width : 980px)" href="a/css/pc_laptop.css">
-	<link rel="stylesheet" type="text/css" media="screen and (max-device-width : 750px) and (orientation: landscape)" href="a/css/phone_landscape.css">
-	<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1280px) and (orientation : portrait)" href="a/css/ipad.css">
-	<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)"href="a/css/ipad_landscape.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width : 750px) and (orientation: landscape)" href="a/css/phone_landscape.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-width: 1280px) and (orientation : portrait)" href="a/css/ipad.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)" href="a/css/ipad_landscape.css">
 
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 	<link id="favicon" rel="shortcut icon" href="a/imgs/logo.ico"/>
@@ -35,7 +37,6 @@
 	<meta name="keywords" content="ajourneyinimages,journeyinimages,journey,images,graeme,brunton,graemebrunton,travel,usa,fiji,newzealand,new,zealand,emily,hall,emilyhall,homebirdflies">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-	<meta charset="UTF-8">
 
 </head>
 
@@ -83,13 +84,13 @@
 		</div>
 
 		<div class="about_info hide">
-			In September 2015, my partner Emily and I left our jobs and our homes to travel.</br>
+			In September 2015, my partner Emily and I left our jobs and our homes to travel.<br>
 			Our first stop was the United States where we went on a 3 month road trip in an RV. We drove - and camped - through
-			the southern states for 6 weeks and then went to the west coast to do the same for another 6 weeks.</br>
-			We travelled to many beautiful places and I created this site in order to show the photos we've taken along the way.</br></br>
+			the southern states for 6 weeks and then went to the west coast to do the same for another 6 weeks.<br>
+			We travelled to many beautiful places and I created this site in order to show the photos we've taken along the way.<br><br>
 
 			You can find the photos in the 'Photo' section of this site. The site also has a 'USA Route' section where you can view both
-			routes we travelled in the USA (from A to Z).</br></br>
+			routes we travelled in the USA (from A to Z).<br><br>
 
 			Emily has also been writing a blog that you can view at <a href="https://homebirdflies.wordpress.com/">homebirdflies.wordpress.com</a>.
 

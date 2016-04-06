@@ -7,6 +7,7 @@ $( window ).ready(function() {
 		$('.back_button').removeClass('back_1').removeClass('back_2');
 		$('.back_button').addClass('image_back_button');
 		$('.landscape_back_button').removeClass('hide');
+		$('.dload_image_link').removeClass('hide');
 	}
 
 	window.hide_image = function(){
@@ -17,6 +18,7 @@ $( window ).ready(function() {
 		$('.back_button').removeClass('image_back_button');
 		$('.all_button_groups').removeClass('hide');
 		$('.landscape_back_button').addClass('hide');
+		$('.dload_image_link').addClass('hide');
 	}
 
 	window.hide_map = function() {
@@ -118,6 +120,8 @@ $( window ).ready(function() {
 			$('.image_container').removeClass('hide');
 			$('.comment_toggle_down').removeClass('hide');
 
+			//$('.dload_image_link').attr("href", "a/imgs/largeimages/" + img_dload + ".jpg").attr("download", "");
+
 		})
 	}
 
@@ -130,5 +134,6 @@ $( window ).ready(function() {
 		$('.image_loader').addClass('hide');
 		$('.comment_toggle_down').addClass('hide');
 		$('.comment_toggle_up').addClass('hide');
+		$('.dload_image_link').addClass('hide');
 	}
 })
