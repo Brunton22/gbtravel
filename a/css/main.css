@@ -29,10 +29,6 @@ html, body {
 		display: none !important;
 	}
 
-  .main_sections {
-    visibility: hidden;
-  }
-
   .picture_section {
     height:33.3333%;
     background-color: #59a1b5;
