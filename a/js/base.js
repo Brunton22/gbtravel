@@ -10,6 +10,23 @@ $(document).ready(function() {
 		window.location.hash = '#main';
 	}
 
+	function show_page() {
+
+		$('.picture_section').addClass('animated slideInDown').css('visibility', 'visible');
+		$('.map_section').addClass('animated slideInLeft').css('visibility', 'visible');
+		$('.about_section').addClass('animated slideInUp').css('visibility', 'visible');
+	}
+
+	function remove_animation() {
+
+		$('.picture_section').removeClass('animated slideInDown');
+		$('.map_section').removeClass('animated slideInLeft');
+		$('.about_section').removeClass('animated slideInUp');
+	}
+
+	setTimeout(show_page, 500);
+	setTimeout(remove_animation, 1500)	
+
 	//create buttons
 
 	$.ajax({

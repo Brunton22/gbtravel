@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="a/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="a/css/jquery.mobile-1.4.5.min.css">
 	<link rel="stylesheet" type="text/css" href="a/css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="a/css/animate.css">
 	<link rel="stylesheet" type="text/css" href="a/css/main.css">
 	<link rel="stylesheet" type="text/css" media="screen and (min-width: 320px) and (max-width: 370px)" href="a/css/smaller_phones.css">
 	<link rel="stylesheet" type="text/css" media="screen and (min-width : 980px)" href="a/css/pc_laptop.css">
