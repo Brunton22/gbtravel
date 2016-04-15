@@ -85,16 +85,15 @@
 		</div>
 
 		<div class="about_info hide">
-			In September 2015, my partner Emily and I left our jobs and our homes to travel.<br>
-			Our first stop was the United States where we went on a 3 month road trip in an RV. We drove - and camped - through
+			In September 2015, my partner Emily and I left our home town to travel.<br>
+			Our first stop on our adventure was the United States where we went on a 3 month road trip in an RV. We drove - and camped - through
 			the southern states for 6 weeks and then went to the west coast to do the same for another 6 weeks.<br>
-			We travelled to many beautiful places and I created this site in order to show the photos we've taken along the way.<br><br>
+			We travelled to many beautiful and mesmerising places and I decided to create this site to try and share what we have seen along the way.<br><br>
 
 			You can find the photos in the 'Photo' section of this site. The site also has a 'USA Route' section where you can view both
 			routes we travelled in the USA (from A to Z).<br><br>
 
-			Emily has also been writing a blog that you can view at <a href="https://homebirdflies.wordpress.com/">homebirdflies.wordpress.com</a>.
-
+			Emily has also been writing a blog giving her point of view of our travels that you can view at <a href="https://homebirdflies.wordpress.com/">homebirdflies.wordpress.com</a>.
 		</div>
 
 		<div class="nav_arrows image_nav_left fa fa-chevron-circle-left fa-2x left_arrow nav_arrows_button hide"></div>
