@@ -45,7 +45,7 @@ html, body {
     /*background-color: #765B8E;*/
     border-top-style: dashed;
     border-width: 1px;
-    border-color: antiquewhite;
+    border-color: black;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#66669a+0,66669a+100 */
     background: rgb(102,102,154); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(102,102,154,1) 0%, rgba(102,102,154,1) 100%); /* FF3.6-15 */
@@ -328,4 +328,5 @@ html, body {
     padding-right: 10px;
     font-family: 'Raleway', sans-serif;
     right: 59px;
+    text-shadow: none;
   }
