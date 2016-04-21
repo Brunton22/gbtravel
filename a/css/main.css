@@ -43,9 +43,6 @@ html, body {
   .map_section {
     height:33.3333%;
     /*background-color: #765B8E;*/
-    border-top-style: dashed;
-    border-width: 1px;
-    border-color: black;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#66669a+0,66669a+100 */
     background: rgb(102,102,154); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(102,102,154,1) 0%, rgba(102,102,154,1) 100%); /* FF3.6-15 */
@@ -58,9 +55,6 @@ html, body {
   .about_section {
     height: 33.3333%;
     /*background-color: #b8e698;*/
-    border-top-style: dashed;
-    border-width: 1px;
-    border-color: black;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d9da88+0,c4c559+100 */
     background: rgb(217,218,136); /* Old browsers */
     background: -moz-linear-gradient(top,  rgba(217,218,136,1) 0%, rgba(196,197,89,1) 100%); /* FF3.6-15 */
