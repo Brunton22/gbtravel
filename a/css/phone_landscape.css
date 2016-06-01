@@ -47,7 +47,8 @@
 
 .routes_title {
   top: 3%;
-  left: 47%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav_arrows {
@@ -80,6 +81,7 @@
 
 .about_info {
   right: 64px;
+  font-size: 14px;
 }
 
 .comment_toggle_up {
