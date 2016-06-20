@@ -36,22 +36,22 @@
 .image_container {
   width: 75%;
   height: 80%;
-  margin-left: 12%;
+  margin-left: auto;
 }
 
-.image {
+/*.image {
   margin-top: 6%;
-}
+}*/
 
-.image_comment {
-  background-color: black;
-  opacity: 0.7;
-  color: white;
-  bottom: auto;
-  width: 75%;
-  height: 5%;
-  font-size: 20px;
-}
+  .image_comment {
+    /* background-color: black; */
+    /* opacity: 0.7; */
+    color: #111;
+    bottom: auto;
+    /* width: 75%; */
+    height: 5%;
+    font-size: 28px;
+  }
 
 .all_buttons {
 
@@ -88,3 +88,20 @@
   top: 50%;
   left: 50%;
 }
+
+/*polaroid */
+
+  .polaroid {
+    width: 620px;
+    height: 600px;
+    top: 10%;
+  }
+
+  .polaroid-img {
+    left: 22px;
+  }
+
+  .polaroid-text {
+    padding: 10px 20px;
+  }
+

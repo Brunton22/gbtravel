@@ -68,7 +68,8 @@ $(document).ready(function() {
 				data: {country_id: country},
 				success: function(data){
 
-					$('.image_container').html(data);
+					//$('.image_container').html(data);
+					$('.img_container').html(data);
 					image_loader();
 				}
 			})
@@ -117,7 +118,8 @@ $(document).ready(function() {
 				data: {state_name: state},
 				success: function(data){
 
-					$('.image_container').html(data);
+					//$('.image_container').html(data);
+					$('.img_container').html(data);
 					image_loader();
 				}
 			})

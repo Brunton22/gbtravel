@@ -3,13 +3,27 @@
 }
 
 .image_nav_left {
-	top: 66%;
+	top: 83%;
 }
 
 .image_nav_right {
-	top: 66%;
+	top: 83%;
 }
 
 .about_info {
 	font-size: 14px;
+}
+
+.polaroid {
+    width: 240px;
+    height: 325px;
+    top: 25%;
+}
+
+.polaroid-img {
+	left: 9px;
+}
+
+.polaroid_text {
+	font-size: 12px;
 }

@@ -10,7 +10,7 @@
 }
 
 .image_back_button {
-  display: none;
+  display: block;
 }
 
 .back_buttons {
@@ -20,12 +20,12 @@
 
 .image_nav_left {
   right: 93%;
-  opacity: 0.5;
+  /*opacity: 0.5;*/
 }
 
 .image_nav_right {
   right: -2%;
-  opacity: 0.5;
+  /*opacity: 0.5;*/
 }
 
 .mp_buttons {
@@ -37,11 +37,9 @@
 }
 
 .image_comment {
-  bottom: 0%;
   width: 100%;
   height: 7%;
   padding-left: 5%;
-  padding-top: 2%;
   padding-bottom: 2px;
 }
 
@@ -72,7 +70,7 @@
 }
 
 .landscape_back_button {
-  display: block;
+  display: none;
   position: absolute;
   right: 10%;
   color: #585252;
@@ -85,11 +83,11 @@
 }
 
 .comment_toggle_up {
-  display: block;
+  display: none;
 }
 
 .comment_toggle_down {
-  display: block;
+  display: none;
 }
 
 .comment_toggle {
@@ -103,4 +101,14 @@
 .image_loader {
   top: 46%;
   left: 48%;
+}
+
+.polaroid {
+    width: 60%;
+    height: 92%;
+    top: 5%;
+}
+
+.polaroid-text {
+  padding: 0;
 }

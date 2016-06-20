@@ -26,8 +26,12 @@
 
     		while ($row=mysqli_fetch_row($result)) {
 
-    		echo "<img class='image_$row[0] o_image image' id='$row[0]' alt='$row[3]' src='a/imgs/site_images/$row[0].jpg'>
-						<div class='image_comment_$row[0] image_comment o_comment'>$row[3]</div>";
+    		echo /*"<img class='image_$row[0] o_image image' id='$row[0]' alt='$row[3]' src='a/imgs/site_images/$row[0].jpg'>
+						<div class='image_comment_$row[0] image_comment o_comment'>$row[3]</div>";*/
+                        "<img class='image_$row[0] o_image image pol_image' id='$row[0]' src='a/imgs/site_images/$row[0].jpg'>
+                            <div class='image_comment_$row[0] image_comment o_comment polaroid_text'>
+                                $row[3]
+                            </div>";
 
 			}
 		}
@@ -67,8 +71,17 @@
 
             while ($row=mysqli_fetch_row($result)) {
 
-                echo "<img class='image_$row[0] o_image image' id='$row[0]' src='a/imgs/site_images/$row[0].jpg'>
-                            <div class='image_comment_$row[0] image_comment o_comment'>$row[3]</div>";
+                //echo "<img class='image_$row[0] o_image image' id='$row[0]' src='a/imgs/site_images/$row[0].jpg'>
+                            //<div class='image_comment_$row[0] image_comment o_comment'>$row[3]</div>";
+
+                echo    /*"<div class='polaroid'>
+                            <div class='polaroid-img'>
+                                <div class='gloss'></div>*/
+                            "<img class='image_$row[0] o_image image pol_image' id='$row[0]' src='a/imgs/site_images/$row[0].jpg'>
+                            <div class='image_comment_$row[0] image_comment o_comment polaroid_text'>
+                                $row[3]
+                            </div>";
+                        /*</div>";*/
             }
         }
     }

@@ -11,12 +11,11 @@
 .image {
   width: 100%;
   height: 100%;
-  margin-top: 25%;
-  border-width: 2px 0px 2px 0px;
 }
 
 .image_comment {
   width: 100%;
+  font-size: 30px;
 }
 
 .image_nav_right{
@@ -84,4 +83,14 @@
   top: 40%;
   left: 48%;
   font-size: 2.5em;
+}
+
+.polaroid {
+  width: 620px;
+  height: 725px;
+  top: 25%;
+}
+
+.polaroid-img {
+  left: 20px;
 }

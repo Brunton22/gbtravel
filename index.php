@@ -29,7 +29,7 @@
 	<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-width: 1280px) and (orientation : portrait)" href="a/css/ipad.css">
 	<link rel="stylesheet" type="text/css" media="screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape)" href="a/css/ipad_landscape.css">
 
-	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway|Shadows+Into+Light' rel='stylesheet' type='text/css'>
 	<link id="favicon" rel="shortcut icon" href="a/imgs/logo.ico"/>
 
 
@@ -68,6 +68,12 @@
 		</div>
 
 		<div class="image_container hide">
+			<div class='polaroid'>
+                <div class='polaroid-img'>
+                	<div class='gloss'></div>
+                	<span class='img_container'></span>
+          		</div>
+          	</div>
 		</div>
 		<i class="fa fa-spinner fa-pulse image_loader hide"></i>
 
