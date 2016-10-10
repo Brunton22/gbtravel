@@ -283,7 +283,7 @@ html, body {
     width:70%;
     left: 15%;
     /*top:15%;*/
-    border: 2px solid black;
+    border: 2px solid white;
   }
   #map1 {
     z-index: -1;
@@ -310,7 +310,7 @@ html, body {
     position: absolute;
     top: 5%;
     left: 38%;
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Raleway', sans-serif;
     text-shadow: none;
     color: black;
@@ -332,11 +332,11 @@ html, body {
 
   .polaroid {
     width: 320px;
-    height: 425px;
+    height: 375px;
     background: #FFF;
     position: relative;
     /* left: 40%; */
-    top: 20%;
+    top: 25%;
     background: linear-gradient(120deg, #fff, #DDD 60%);
     box-shadow: 2px -2px 20px 0px rgba(0,0,0,0.6), inset 4px 5px 10px 0 rgba(0,0,0,0.1);
     -webkit-backface-visibility: hidden;

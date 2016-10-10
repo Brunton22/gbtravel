@@ -4,7 +4,7 @@
 
 <head>
 
-	<title>A Journey In Images</title>
+	<title>Journey In Images</title>
 
 	<meta charset="UTF-8">
 
@@ -13,7 +13,7 @@
 	<script async src="a/js/functions.js"></script>
 	<script async src="a/js/hash_change.js"></script>
 	<script src="a/js/image_slider.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRHtu7BImk69Iw_VGB9pTKSJYCMAN7MMY"></script>
 	<script async src="a/js/map.js"></script>
 	<script async src="a/js/base.js"></script>
 	<script src="a/js/jquery.mobile-1.4.5.min.js"></script>
