@@ -13,7 +13,7 @@
 	<script async src="a/js/functions.js"></script>
 	<script async src="a/js/hash_change.js"></script>
 	<script src="a/js/image_slider.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRHtu7BImk69Iw_VGB9pTKSJYCMAN7MMY"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9TvSp0_Cy0ngk-6zfS18bvIax3KVtl7E"></script>
 	<script async src="a/js/map.js"></script>
 	<script async src="a/js/base.js"></script>
 	<script src="a/js/jquery.mobile-1.4.5.min.js"></script>
@@ -43,14 +43,13 @@
 
 <body data-role='none'>
 	<div class="body_container" data-role='none'>
-		<div class="back_buttons hide">
-			<i class="back_button back_1 fa fa-2x fa-arrow-circle-left"></i>
-			<i class="landscape_back_button fa fa-2x fa-times hide"></i>
-		</div>
-
 		<div class="button_group all_button_groups">
-			<div class="picture_section main_sections">
-				<button class="all_buttons mp_buttons picture_button picture_buttons centered" data-role='none'>Images</button>
+			<div class="back_buttons hide">
+				<i class="back_button back_1 fa fa-2x fa-arrow-circle-left"></i>
+				<i class="landscape_back_button fa fa-2x fa-times hide"></i>
+			</div>
+			<div class="picture_section transform main_sections">
+				<button class="all_buttons mp_buttons picture_button picture_buttons" data-role='none'>Images</button>
 
 				<div class="button_group all_button_groups secondary_buttons country_buttons_group hide">
 				</div>
@@ -59,51 +58,60 @@
 				</div>
 			</div>
 
-			<div class="map_section main_sections">
-				<button class="all_buttons mp_buttons map_button centered" data-role='none'>USA Route</button>
+			<div class="map_section transform main_sections">
+				<button class="all_buttons mp_buttons map_button" data-role='none'>USA Route</button>
+				<div class="usa_routes">
+					<div class="routes_title">
+						<div class="hide map_title" id="title_1">Route 1</div>
+						<div class="hide map_title" id="title_2">Route 2</div>
+					</div>
+					<div class="maps" id="map1"></div>
+					<div class="maps" id="map2"></div>
+					<div class="map_arrows hide">
+						<div class="map_nav_left fa fa-chevron-circle-left fa-2x left_arrow nav_arrows_button"></div>
+						<div class="map_nav_right fa fa-chevron-circle-right fa-2x right_arrow nav_arrows_button"></div>
+					</div>
+				</div>
 			</div>
-			<div class="about_section main_sections">
-				<button class="all_buttons mp_buttons about_button centered" data-role='none'>About</button>
+			<div class="about_section transform main_sections">
+				<button class="all_buttons mp_buttons about_button" data-role='none'>About</button>
+				<div class="about_info hide">
+					In September 2015, my partner Emily and I left our home town to travel.<br>
+					Our first stop on our adventure was the United States where we went on a 3 month road trip in an RV. We drove - and camped - through
+					the southern states for 6 weeks and then went to the west coast to do the same for another 6 weeks.<br>
+					We travelled to many beautiful and mesmerising places and I decided to create this site to try and share what we have seen along the way.<br><br>
+
+					You can find the photos in the 'Photo' section of this site. The site also has a 'USA Route' section where you can view both
+					routes we travelled in the USA (from A to Z).<br><br>
+
+					Emily has also been writing a blog giving her point of view of our travels that you can view at <a href="https://homebirdflies.wordpress.com/">homebirdflies.wordpress.com</a>.
+				</div>
 			</div>	
 		</div>
-
-		<div class="image_container hide">
-			<div class='polaroid'>
-                <div class='polaroid-img'>
-                	<div class='gloss'></div>
-                	<span class='img_container'></span>
-          		</div>
-          	</div>
+		
+		<div class="image_page hide">
+				<div class="image_container">
+				<div class="back_buttons hide">
+					<i class="back_button img_back_button back_1 fa fa-2x fa-arrow-circle-left"></i>
+					<i class="landscape_back_button fa fa-2x fa-times hide"></i>
+				</div>
+					<div class='polaroid'>
+		                <div class='polaroid-img'>
+		                	<div class='gloss'></div>
+		                	<span class='img_container'></span>
+		          		</div>
+		          	</div>
+		        </div>
+	          	<div class='nav_arrows_group'>
+	          		<div class="nav_arrows image_nav_left fa fa-chevron-circle-left fa-2x left_arrow nav_arrows_button hide"></div>
+					<div class="nav_arrows image_nav_right fa fa-chevron-circle-right fa-2x right_arrow nav_arrows_button hide"></div>
+				</div>
+			</div>
 		</div>
 		<i class="fa fa-spinner fa-pulse image_loader hide"></i>
 
-		<div class="usa_routes">
-			<div class="routes_title">
-				<div class="hide map_title" id="title_1">Route 1</div>
-				<div class="hide map_title" id="title_2">Route 2</div>
-			</div>
-			<div class="maps" id="map1"></div>
-			<div class="maps" id="map2"></div>
-			<div class="map_arrows hide">
-				<div class="map_nav_left fa fa-chevron-circle-left fa-2x left_arrow nav_arrows_button"></div>
-				<div class="map_nav_right fa fa-chevron-circle-right fa-2x right_arrow nav_arrows_button"></div>
-			</div>
-		</div>
-
-		<div class="about_info hide">
-			In September 2015, my partner Emily and I left our home town to travel.<br>
-			Our first stop on our adventure was the United States where we went on a 3 month road trip in an RV. We drove - and camped - through
-			the southern states for 6 weeks and then went to the west coast to do the same for another 6 weeks.<br>
-			We travelled to many beautiful and mesmerising places and I decided to create this site to try and share what we have seen along the way.<br><br>
-
-			You can find the photos in the 'Photo' section of this site. The site also has a 'USA Route' section where you can view both
-			routes we travelled in the USA (from A to Z).<br><br>
-
-			Emily has also been writing a blog giving her point of view of our travels that you can view at <a href="https://homebirdflies.wordpress.com/">homebirdflies.wordpress.com</a>.
-		</div>
-
-		<div class="nav_arrows image_nav_left fa fa-chevron-circle-left fa-2x left_arrow nav_arrows_button hide"></div>
-		<div class="nav_arrows image_nav_right fa fa-chevron-circle-right fa-2x right_arrow nav_arrows_button hide"></div>
+		<!--<div class="nav_arrows image_nav_left fa fa-chevron-circle-left fa-2x left_arrow nav_arrows_button hide"></div>
+		<div class="nav_arrows image_nav_right fa fa-chevron-circle-right fa-2x right_arrow nav_arrows_button hide"></div>-->
 		<i class="fa fa-caret-square-o-up comment_toggle_up comment_toggle hide"></i>
 		<i class="fa fa-caret-square-o-down comment_toggle_down comment_toggle hide"></i>
 

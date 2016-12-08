@@ -1,12 +1,6 @@
 .container {
-    width: auto;
+  width: auto;
 }
-
-.image_container {
-  width: 100%;
-  height: 45%;
-  margin-left: 0%
- }
 
 .image {
   width: 100%;
@@ -20,7 +14,7 @@
 
 .image_nav_right{
   top: 40%;
-  right: -4.4%;
+  float: right;
   opacity: 0.8;
 }
 
@@ -36,9 +30,6 @@
 }
 
 .mp_buttons {
-  height: 40%;
-  left: 38%;
-  top: 40%;
   font-size: 25px;
 }
 
@@ -54,10 +45,6 @@
   font-size: 25px;
 }
 
-.routes_title {
-  left: 45%;
-}
-
 .map_nav_left {
   right: 84%;
   font-size: 3em;
@@ -71,10 +58,6 @@
   display: none;
 }
 
-.about_info {
-  right: 81px;
-}
-
 .nav_arrows {
   font-size: 3em;
 }
@@ -85,10 +68,20 @@
   font-size: 2.5em;
 }
 
+.nav_arrows_group {
+  position: absolute;
+  width: 100%;
+  right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: auto;
+  margin-left: auto;
+}
+
 .polaroid {
-  width: 620px;
-  height: 725px;
-  top: 25%;
+  width: 80%;
+  height: 65%;
+  top: 15%;
 }
 
 .polaroid-img {

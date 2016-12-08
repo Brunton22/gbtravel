@@ -26,7 +26,7 @@ $( document ).ready(function() {
 
       get_country_images_ajax(country);
 
-      $('.image_container').removeClass('hide');
+      $('.image_page').removeClass('hide');
       $('.back_button').removeClass('back_2').removeClass('back_1').addClass('back_3');
     }
 
@@ -34,7 +34,7 @@ $( document ).ready(function() {
 
       var country = '3';
 
-      $('.image_container').removeClass('hide');
+      $('.image_page').removeClass('hide');
       show_image();
       $('.back_button').removeClass('back_2').removeClass('back_1').addClass('back_3');
     }
@@ -57,7 +57,7 @@ $( document ).ready(function() {
       var state_hash = window.location.hash;
       var state = state_hash.replace('#', '');
       get_state_images_ajax(state); 
-      $('.image_container').removeClass('hide');
+      $('.image_page').removeClass('hide');
       $('.back_button').removeClass('back_2').removeClass('back_1').addClass('back_3');
     }
   }

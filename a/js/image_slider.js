@@ -21,6 +21,7 @@ $(document).ready(function(){
 		var first = parseInt( $('.image').first().attr('id') );
 
 			$('.image_'+image_no).hide('slide', {direction: 'left'} );
+			$('.polaroid').hide('slide', {direction:'left'} );
 			$('.image_comment_'+image_no).hide('slide', {direction: 'left'} );
 
 
@@ -35,6 +36,7 @@ $(document).ready(function(){
 		}
 
 		$('.image_'+image_no).delay(400).show('slide', {direction: 'right'} );
+		$('.polaroid').delay(400).show('slide', {direction: 'right'} );
 
 		if ($('.comment_toggle_up').css('display') == 'none'){
 
@@ -48,6 +50,7 @@ $(document).ready(function(){
 		var first = parseInt( $('.image').first().attr('id') );
 
 		$('.image_'+image_no).hide('slide', {direction: 'right'} );
+		$('.polaroid').hide('slide', {direction: 'right'} );
 		$('.image_comment_'+image_no).hide('slide', {direction: 'right'} );
 
 		if (image_no == first){
@@ -64,6 +67,7 @@ $(document).ready(function(){
 		while (($('#'+image_no).length) == 0);
 
 		$('.image_'+image_no).delay(400).show('slide', {direction: 'left'} );
+		$('.polaroid').delay(400).show('slide', {direction: 'left'} );
 	
 		if ($('.comment_toggle_up').css('display') == 'none'){		
 

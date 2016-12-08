@@ -1,22 +1,11 @@
-.image_container {
-  height: 60%;
-  margin-left: 0px;
-  width:100%;
-}
-
 .image {
   border: none;
 }
 
 .image_comment {
-  font-size: 30px;
+  font-size: 22px;
   width: 100%;
   padding-left: 1%;
-}
-
-.all_buttons {
-  width: 45%;
-  left: 38%;
 }
 
 .back_buttons {
@@ -30,17 +19,14 @@
 }
 
 .mp_buttons {
-  top: 50%;
   font-size: 20px;
 }
 
 .state_buttons {
-  left: 30%;
   font-size: 20px;
 }
 
 .country_buttons {
-  left: 30%;
   font-size: 20px;
 }
 
@@ -49,20 +35,27 @@
   font-size: 2.5em;
 }
 
+.nav_arrows_group {
+  position: absolute;
+  width: 100%;
+  right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: auto;
+  margin-left: auto;
+}
+
 .image_nav_right {
-  right: -6%;
+  margin-right: 10%;
+  float:right;
 }
 
 .image_nav_left{
-  right: 89%;
+  margin-left: 10%;
 }
 
 .landscape_back_button {
   display: none;
-}
-
-.about_info {
-  right: 97px;
 }
 
 .comment_toggle {
@@ -76,5 +69,7 @@
 }
 
 .polaroid {
-  top: 7%;
+  width: 60%;
+  height: 80%;
+  top: 10%;
 }
