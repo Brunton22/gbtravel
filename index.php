@@ -84,7 +84,7 @@
 					You can find the photos in the 'Photo' section of this site. The site also has a 'USA Route' section where you can view both
 					routes we travelled in the USA (from A to Z).<br><br>
 
-					Emily has also been writing a blog giving her point of view of our travels that you can view at <a href="https://homebirdflies.wordpress.com/">homebirdflies.wordpress.com</a>.
+					Emily has also been writing a blog giving her point of view of our travels that you can view at <a href="https://homebirdflies.wordpress.com/" id='emily_link'>homebirdflies.wordpress.com</a>.
 				</div>
 			</div>	
 		</div>

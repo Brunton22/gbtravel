@@ -1,1 +1,1 @@
-# www.ajourneyinimages.com
+# www.journeyinimages.com
