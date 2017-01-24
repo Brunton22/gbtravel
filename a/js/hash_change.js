@@ -56,7 +56,6 @@ $( document ).ready(function() {
 
       var state_hash = window.location.hash;
       var state = state_hash.replace('#', '');
-      get_state_images_ajax(state); 
       $('.image_page').removeClass('hide');
       $('.back_button').removeClass('back_2').removeClass('back_1').addClass('back_3');
     }
